@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-07T23:09:44+00:00",
+  "generated_at": "2026-10-07T23:39:46+00:00",
   "projects": [
     {
       "slug": "leakguard",
@@ -12,6 +12,11 @@
       },
       "live_url": "https://leakguard-hh8e.onrender.com",
       "commits": [
+        {
+          "hash": "192ce5e",
+          "subject": "feat(p2-h): surfaces (phases 125/40/96/67) \u2014 per-broker verification + workflow health dashboard, search-exposure view (cap review: keep 6), accessibility pass + checks, no-store cache policy pinned at the response choke point",
+          "date": "2026-10-08T05:07:33+05:30"
+        },
         {
           "hash": "c652816",
           "subject": "docs(p2-g): closeout \u2014 PHASE_STATUS 153/141/119 DONE (152 DONE), cycle report, CURRENT_STATE addendum",
@@ -36,11 +41,6 @@
           "hash": "9491047",
           "subject": "docs(p2-e): closeout \u2014 PHASE_STATUS 158/160 DONE (144 DONE), cycle report, CURRENT_STATE addendum",
           "date": "2026-10-08T03:04:02+05:30"
-        },
-        {
-          "hash": "3a56fb0",
-          "subject": "feat(p2-e): scan budget engine + data-quality pipeline (phases 158/160) \u2014 per-user daily scan budget (scheduled lane exempt), budgets registry in admin metrics, DQ stage over stored findings (0015: flag + rollup, no silent deletion)",
-          "date": "2026-10-08T02:52:07+05:30"
         }
       ]
     },
