@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-07T21:36:35+00:00",
+  "generated_at": "2026-10-07T22:11:48+00:00",
   "projects": [
     {
       "slug": "leakguard",
@@ -12,6 +12,11 @@
       },
       "live_url": "https://leakguard-hh8e.onrender.com",
       "commits": [
+        {
+          "hash": "0d74ccb",
+          "subject": "feat(p2-f): broker depth (phases 111/162/31/137/166) \u2014 fake-broker E2E harness at the transport seam, workflow_version on attempts (0016) + case-detail endpoint, probe classification matrix, local-probe domain allowlist",
+          "date": "2026-10-08T03:40:26+05:30"
+        },
         {
           "hash": "9491047",
           "subject": "docs(p2-e): closeout \u2014 PHASE_STATUS 158/160 DONE (144 DONE), cycle report, CURRENT_STATE addendum",
@@ -36,11 +41,6 @@
           "hash": "5378087",
           "subject": "docs(p2-c): closeout \u2014 PHASE_STATUS 76/77 DONE (140 DONE), cycle report, CURRENT_STATE production addendum",
           "date": "2026-10-08T02:00:12+05:30"
-        },
-        {
-          "hash": "f022399",
-          "subject": "feat(p2-c): observability + engineering alerts (phases 76/77) \u2014 error ledger (0013, hash-only rollups), admin metrics endpoint, alert evaluator (queue/worker/provider/error-spike) with daily-deduped owner email",
-          "date": "2026-10-08T01:44:57+05:30"
         }
       ]
     },
