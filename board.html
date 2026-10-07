@@ -149,19 +149,24 @@
     <!--DATA_START-->
 <script id="board-data" type="application/json">
 {
-  "generated_at": "2026-10-07T21:26:37+00:00",
+  "generated_at": "2026-10-07T21:36:35+00:00",
   "projects": [
     {
       "slug": "leakguard",
       "name": "LeakGuard",
-      "status_line": "P2 completion program running \u2014 9/25 P2 phases closed \u00b7 P2-A Records: DONE \u00b7 P2-B Performance: DONE \u00b7 P2-C Observability & alerts: DONE \u00b7 P2-D Cost: DONE \u00b7 P2-E Scan budget & data quality: BUILDING \u00b7 P2-F Broker depth: QUEUED \u00b7 P2-G Removal depth: QUEUED \u00b7 P2-H Surfaces: QUEUED \u00b7 P2-I Closeout: QUEUED \u00b7 production commit 1387fc4 \u00b7 scoreboard 142 DONE \u00b7 23 PARTIAL \u00b7 1 MISSING \u00b7 1 UNVERIFIED \u00b7 14 NOT APPLICABLE",
+      "status_line": "P2 completion program running \u2014 11/25 P2 phases closed \u00b7 P2-A Records: DONE \u00b7 P2-B Performance: DONE \u00b7 P2-C Observability & alerts: DONE \u00b7 P2-D Cost: DONE \u00b7 P2-E Scan budget & data quality: DONE \u00b7 P2-F Broker depth: BUILDING \u00b7 P2-G Removal depth: QUEUED \u00b7 P2-H Surfaces: QUEUED \u00b7 P2-I Closeout: QUEUED \u00b7 production commit 1387fc4 \u00b7 scoreboard 144 DONE \u00b7 21 PARTIAL \u00b7 1 MISSING \u00b7 1 UNVERIFIED \u00b7 14 NOT APPLICABLE",
       "progress": {
-        "done": 142,
+        "done": 144,
         "total": 181,
-        "label": "142 of 181 phases DONE"
+        "label": "144 of 181 phases DONE"
       },
       "live_url": "https://leakguard-hh8e.onrender.com",
       "commits": [
+        {
+          "hash": "9491047",
+          "subject": "docs(p2-e): closeout \u2014 PHASE_STATUS 158/160 DONE (144 DONE), cycle report, CURRENT_STATE addendum",
+          "date": "2026-10-08T03:04:02+05:30"
+        },
         {
           "hash": "3a56fb0",
           "subject": "feat(p2-e): scan budget engine + data-quality pipeline (phases 158/160) \u2014 per-user daily scan budget (scheduled lane exempt), budgets registry in admin metrics, DQ stage over stored findings (0015: flag + rollup, no silent deletion)",
@@ -186,11 +191,6 @@
           "hash": "f022399",
           "subject": "feat(p2-c): observability + engineering alerts (phases 76/77) \u2014 error ledger (0013, hash-only rollups), admin metrics endpoint, alert evaluator (queue/worker/provider/error-spike) with daily-deduped owner email",
           "date": "2026-10-08T01:44:57+05:30"
-        },
-        {
-          "hash": "aa16d1c",
-          "subject": "docs(p2-b): phases 115/116 DONE \u2014 measured performance + scalability record; production 1387fc4 live (138 DONE)",
-          "date": "2026-10-08T01:19:25+05:30"
         }
       ]
     },
