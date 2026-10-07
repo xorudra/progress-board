@@ -149,7 +149,7 @@
     <!--DATA_START-->
 <script id="board-data" type="application/json">
 {
-  "generated_at": "2026-10-07T21:21:38+00:00",
+  "generated_at": "2026-10-07T21:26:37+00:00",
   "projects": [
     {
       "slug": "leakguard",
@@ -162,6 +162,11 @@
       },
       "live_url": "https://leakguard-hh8e.onrender.com",
       "commits": [
+        {
+          "hash": "3a56fb0",
+          "subject": "feat(p2-e): scan budget engine + data-quality pipeline (phases 158/160) \u2014 per-user daily scan budget (scheduled lane exempt), budgets registry in admin metrics, DQ stage over stored findings (0015: flag + rollup, no silent deletion)",
+          "date": "2026-10-08T02:52:07+05:30"
+        },
         {
           "hash": "c919b02",
           "subject": "docs(p2-d): closeout \u2014 PHASE_STATUS 66/124 DONE (142 DONE), cycle report, CURRENT_STATE addendum",
@@ -186,11 +191,6 @@
           "hash": "aa16d1c",
           "subject": "docs(p2-b): phases 115/116 DONE \u2014 measured performance + scalability record; production 1387fc4 live (138 DONE)",
           "date": "2026-10-08T01:19:25+05:30"
-        },
-        {
-          "hash": "1387fc4",
-          "subject": "fix(p2-b): batch per-finding notifications (one 3-statement ledger write, in-app only) \u2014 email is the per-cycle summary digest; kills ~3.5s/notice tail and the ~215-emails-per-cycle storm",
-          "date": "2026-10-08T01:01:45+05:30"
         }
       ]
     },
