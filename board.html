@@ -149,19 +149,24 @@
     <!--DATA_START-->
 <script id="board-data" type="application/json">
 {
-  "generated_at": "2026-10-07T20:51:31+00:00",
+  "generated_at": "2026-10-07T21:01:42+00:00",
   "projects": [
     {
       "slug": "leakguard",
       "name": "LeakGuard",
-      "status_line": "P2 completion program running \u2014 7/25 P2 phases closed \u00b7 P2-A Records: DONE \u00b7 P2-B Performance: DONE \u00b7 P2-C Observability & alerts: DONE \u00b7 P2-D Cost: BUILDING \u00b7 P2-E Scan budget & data quality: QUEUED \u00b7 P2-F Broker depth: QUEUED \u00b7 P2-G Removal depth: QUEUED \u00b7 P2-H Surfaces: QUEUED \u00b7 P2-I Closeout: QUEUED \u00b7 production commit 1387fc4 \u00b7 scoreboard 140 DONE \u00b7 25 PARTIAL \u00b7 1 MISSING \u00b7 1 UNVERIFIED \u00b7 14 NOT APPLICABLE",
+      "status_line": "P2 completion program running \u2014 9/25 P2 phases closed \u00b7 P2-A Records: DONE \u00b7 P2-B Performance: DONE \u00b7 P2-C Observability & alerts: DONE \u00b7 P2-D Cost: DONE \u00b7 P2-E Scan budget & data quality: BUILDING \u00b7 P2-F Broker depth: QUEUED \u00b7 P2-G Removal depth: QUEUED \u00b7 P2-H Surfaces: QUEUED \u00b7 P2-I Closeout: QUEUED \u00b7 production commit 1387fc4 \u00b7 scoreboard 142 DONE \u00b7 23 PARTIAL \u00b7 1 MISSING \u00b7 1 UNVERIFIED \u00b7 14 NOT APPLICABLE",
       "progress": {
-        "done": 140,
+        "done": 142,
         "total": 181,
-        "label": "140 of 181 phases DONE"
+        "label": "142 of 181 phases DONE"
       },
       "live_url": "https://leakguard-hh8e.onrender.com",
       "commits": [
+        {
+          "hash": "c919b02",
+          "subject": "docs(p2-d): closeout \u2014 PHASE_STATUS 66/124 DONE (142 DONE), cycle report, CURRENT_STATE addendum",
+          "date": "2026-10-08T02:30:10+05:30"
+        },
         {
           "hash": "3b89d0e",
           "subject": "feat(p2-d): provider cost control + monitoring (phases 66/124) \u2014 daily usage ledger (0014), operator-set safety budgets with honest typed enforcement, admin provider metrics, provider_budget alert",
@@ -186,11 +191,6 @@
           "hash": "1387fc4",
           "subject": "fix(p2-b): batch per-finding notifications (one 3-statement ledger write, in-app only) \u2014 email is the per-cycle summary digest; kills ~3.5s/notice tail and the ~215-emails-per-cycle storm",
           "date": "2026-10-08T01:01:45+05:30"
-        },
-        {
-          "hash": "c5ddd94",
-          "subject": "chore: re-attribute commit authorship to the project owner; refresh hash references across docs",
-          "date": "2026-10-08T00:41:08+05:30"
         }
       ]
     },
