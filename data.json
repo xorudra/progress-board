@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-07T22:24:47+00:00",
+  "generated_at": "2026-10-07T22:49:40+00:00",
   "projects": [
     {
       "slug": "leakguard",
@@ -12,6 +12,11 @@
       },
       "live_url": "https://leakguard-hh8e.onrender.com",
       "commits": [
+        {
+          "hash": "5155044",
+          "subject": "feat(p2-g): removal depth (phases 153/141/119) \u2014 versioned policy engine extracted from the engine (behavior preserved), spec state mapping (spec_status, docs/REMOVAL_STATES.md), admin dead-letter replay with consent re-check + audit",
+          "date": "2026-10-08T04:18:29+05:30"
+        },
         {
           "hash": "5661538",
           "subject": "docs(p2-f): closeout \u2014 PHASE_STATUS 111/162/31/137/166 DONE (149 DONE), cycle report, CURRENT_STATE addendum",
@@ -36,11 +41,6 @@
           "hash": "c919b02",
           "subject": "docs(p2-d): closeout \u2014 PHASE_STATUS 66/124 DONE (142 DONE), cycle report, CURRENT_STATE addendum",
           "date": "2026-10-08T02:30:10+05:30"
-        },
-        {
-          "hash": "3b89d0e",
-          "subject": "feat(p2-d): provider cost control + monitoring (phases 66/124) \u2014 daily usage ledger (0014), operator-set safety budgets with honest typed enforcement, admin provider metrics, provider_budget alert",
-          "date": "2026-10-08T02:17:12+05:30"
         }
       ]
     },
