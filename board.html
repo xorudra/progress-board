@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rudra - Project Progress</title>
+    <style>
+        :root {
+            --bg-color: #121212;
+            --card-bg: #1e1e1e;
+            --text-color: #e0e0e0;
+            --primary-color: #bb86fc;
+            --secondary-color: #03dac6;
+            --error-color: #cf6679;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            margin: 0;
+            padding: 20px;
+            line-height: 1.6;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        h1 {
+            color: var(--primary-color);
+            margin-bottom: 5px;
+        }
+
+        .update-time {
+            color: var(--secondary-color);
+            font-size: 0.9em;
+        }
+
+        .projects-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .project-card {
+            background-color: var(--card-bg);
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .project-title {
+            color: var(--primary-color);
+            margin-top: 0;
+            font-size: 1.2em;
+        }
+
+        .status-line {
+            margin: 10px 0;
+            color: var(--text-color);
+        }
+
+        .progress-container {
+            margin: 15px 0;
+        }
+
+        .progress-label {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 5px;
+            font-size: 0.9em;
+        }
+
+        .progress-bar {
+            height: 8px;
+            background-color: #333;
+            border-radius: 4px;
+            overflow: hidden;
+        }
+
+        .progress-fill {
+            height: 100%;
+            background-color: var(--secondary-color);
+            border-radius: 4px;
+        }
+
+        .live-link {
+            display: inline-block;
+            margin: 10px 0;
+            color: var(--secondary-color);
+            text-decoration: none;
+        }
+
+        .live-link:hover {
+            text-decoration: underline;
+        }
+
+        .commits-list {
+            list-style: none;
+            padding: 0;
+            margin: 15px 0 0 0;
+        }
+
+        .commit-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 8px;
+        }
+
+        .commit-hash {
+            background-color: #333;
+            color: var(--text-color);
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-family: monospace;
+            font-size: 0.8em;
+            margin-right: 10px;
+        }
+
+        .commit-subject {
+            flex-grow: 1;
+        }
+
+        .commit-date {
+            color: #777;
+            font-size: 0.8em;
+        }
+
+        .no-data {
+            text-align: center;
+            color: #777;
+            font-style: italic;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Rudra — Project Progress</h1>
+        <div class="update-time">Updated: <span id="generated-at"></span></div>
+    </header>
+
+    <div class="projects-container" id="projects-container">
+        <div class="no-data">No data yet</div>
+    </div>
+
+    <!--DATA_START-->
+<script id="board-data" type="application/json">
+{
+  "generated_at": "2026-10-07T20:13:20+00:00",
+  "projects": [
+    {
+      "slug": "leakguard",
+      "name": "LeakGuard",
+      "status_line": "P2 completion program running \u2014 5/25 P2 phases closed \u00b7 P2-A Records: DONE \u00b7 P2-B Performance: DONE \u00b7 P2-C Observability & alerts: BUILDING \u00b7 P2-D Cost: QUEUED \u00b7 P2-E Scan budget & data quality: QUEUED \u00b7 P2-F Broker depth: QUEUED \u00b7 P2-G Removal depth: QUEUED \u00b7 P2-H Surfaces: QUEUED \u00b7 P2-I Closeout: QUEUED \u00b7 production commit 1387fc4 \u00b7 scoreboard 138 DONE \u00b7 27 PARTIAL \u00b7 1 MISSING \u00b7 1 UNVERIFIED \u00b7 14 NOT APPLICABLE",
+      "progress": {
+        "done": 138,
+        "total": 181,
+        "label": "138 of 181 phases DONE"
+      },
+      "live_url": "https://leakguard-hh8e.onrender.com",
+      "commits": [
+        {
+          "hash": "aa16d1c",
+          "subject": "docs(p2-b): phases 115/116 DONE \u2014 measured performance + scalability record; production 1387fc4 live (138 DONE)",
+          "date": "2026-10-08T01:19:25+05:30"
+        },
+        {
+          "hash": "1387fc4",
+          "subject": "fix(p2-b): batch per-finding notifications (one 3-statement ledger write, in-app only) \u2014 email is the per-cycle summary digest; kills ~3.5s/notice tail and the ~215-emails-per-cycle storm",
+          "date": "2026-10-08T01:01:45+05:30"
+        },
+        {
+          "hash": "c5ddd94",
+          "subject": "chore: re-attribute commit authorship to the project owner; refresh hash references across docs",
+          "date": "2026-10-08T00:41:08+05:30"
+        },
+        {
+          "hash": "6dc62d3",
+          "subject": "perf(p2-b): set-based lifecycle writer (5 constant statements, was 3+N) + benchmarks + scalability record (phases 115/116)",
+          "date": "2026-10-08T00:21:50+05:30"
+        },
+        {
+          "hash": "5bcba19",
+          "subject": "docs(p2-a): phases 80/131/132 verified \u2014 IR tabletop drill, doc review (README 8 fixes), migration-plan annotations; 136 DONE",
+          "date": "2026-10-07T23:58:50+05:30"
+        },
+        {
+          "hash": "5e76ab9",
+          "subject": "docs(phase-149): per-cycle report system \u2014 docs/cycles index + 13 reports (backfill A-D2, staging, v2.1, audit, P0, P1-A, P1-B, 149) + format guard test; phase 149 DONE \u2014 all P1 phases closed (133 DONE)",
+          "date": "2026-10-07T22:58:21+05:30"
+        }
+      ]
+    },
+    {
+      "slug": "dsrclone",
+      "name": "DSRclone",
+      "status_line": "Private repo \u00b7 VAPT platform build in progress \u00b7 latest phase: Prompt 14",
+      "progress": {
+        "done": 14,
+        "total": 40,
+        "label": "14 of 40 spec phases landed"
+      },
+      "live_url": null,
+      "commits": [
+        {
+          "hash": "eb8460f",
+          "subject": "feat(cloud-security): DSRclone Prompt 14 \u2014 multi-cloud security assessment",
+          "date": "2026-10-07T18:19:35+00:00"
+        },
+        {
+          "hash": "0a4a1f7",
+          "subject": "feat(container-security): DSRclone Prompt 13 \u2014 container, Docker & Kubernetes security",
+          "date": "2026-10-07T17:18:37+00:00"
+        },
+        {
+          "hash": "43328bd",
+          "subject": "feat(code-security): DSRclone Prompt 12 \u2014 source code security",
+          "date": "2026-10-07T14:50:50+00:00"
+        },
+        {
+          "hash": "61bc64b",
+          "subject": "feat(vuln-mgmt): DSRclone Prompt 11 \u2014 vulnerability management & intelligence",
+          "date": "2026-10-07T13:49:33+00:00"
+        },
+        {
+          "hash": "b20735a",
+          "subject": "feat(network-vapt): DSRclone Prompt 10 \u2014 network VAPT engine",
+          "date": "2026-10-07T12:05:56+00:00"
+        },
+        {
+          "hash": "d2f6667",
+          "subject": "feat(api-security): DSRclone Prompt 9 \u2014 API security testing & protection assessment",
+          "date": "2026-10-07T07:17:48+00:00"
+        }
+      ]
+    },
+    {
+      "slug": "nexus-local",
+      "name": "Nexus Local",
+      "status_line": "Live \u00b7 capability integration complete (chat failover, image, voice, agent tools)",
+      "progress": null,
+      "live_url": "https://nexus-local.onrender.com",
+      "commits": [
+        {
+          "hash": "6b6e612",
+          "subject": "Security: per-session rate limits (chat 40/min, transcribe 12/min), TOTP replay protection, master password change (re-encrypts both vaults, signs out all sessions)",
+          "date": "2026-10-07T09:02:54+05:30"
+        },
+        {
+          "hash": "69be6b8",
+          "subject": "Voice merge v2: byte-level RIFF parse (stdlib wave chokes on Groq's streaming header differently per Python version)",
+          "date": "2026-10-07T08:47:11+05:30"
+        },
+        {
+          "hash": "cf3d37b",
+          "subject": "Voice fix: Groq WAV streaming header (nframes=2.1B) poisoned the merge \u2014 set format fields individually",
+          "date": "2026-10-07T08:43:55+05:30"
+        },
+        {
+          "hash": "111e185",
+          "subject": "Sync friend access list [auto]",
+          "date": "2026-10-07T08:43:53+05:30"
+        },
+        {
+          "hash": "87e560c",
+          "subject": "Fix Cloudflare (split-key + catalog + CF image gen), Kilo (gateway base + free filter), HF (router base)",
+          "date": "2026-10-07T01:15:36+05:30"
+        },
+        {
+          "hash": "c807e28",
+          "subject": "Sync friend access list [auto]",
+          "date": "2026-10-07T01:15:34+05:30"
+        }
+      ]
+    },
+    {
+      "slug": "siteguard",
+      "name": "SiteGuard",
+      "status_line": "Live, not in active build",
+      "progress": null,
+      "live_url": "https://siteguard-vf9c.onrender.com",
+      "commits": [
+        {
+          "hash": "ae120e7",
+          "subject": "Expand coverage: 28 passive checks + 9 VAPT tests (was 25+6)",
+          "date": "2026-10-02T02:28:31+05:30"
+        },
+        {
+          "hash": "dfaa456",
+          "subject": "VAPT mode = full scan: 25 passive checks + 6 active tests merged",
+          "date": "2026-10-02T01:59:16+05:30"
+        },
+        {
+          "hash": "34dc41c",
+          "subject": "Add OWASP Top 10 mapping + 2 new checks (25 total)",
+          "date": "2026-10-02T01:39:46+05:30"
+        }
+      ]
+    }
+  ]
+}
+</script>
+<!--DATA_END-->
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const dataElement = document.getElementById('board-data');
+            const projectsContainer = document.getElementById('projects-container');
+            const generatedAtElement = document.getElementById('generated-at');
+
+            if (!dataElement || !projectsContainer || !generatedAtElement) {
+                console.error('Required elements not found');
+                return;
+            }
+
+            try {
+                const data = JSON.parse(dataElement.textContent);
+
+                if (!data || Object.keys(data).length === 0) {
+                    // Show no data message
+                    projectsContainer.innerHTML = '<div class="no-data">No data yet</div>';
+                    return;
+                }
+
+                // Update generated at time
+                if (data.generated_at) {
+                    generatedAtElement.textContent = data.generated_at;
+                }
+
+                // Clear existing content
+                projectsContainer.innerHTML = '';
+
+                // Render projects
+                if (data.projects && data.projects.length > 0) {
+                    data.projects.forEach(project => {
+                        const projectCard = document.createElement('div');
+                        projectCard.className = 'project-card';
+
+                        // Project title
+                        if (project.name) {
+                            const titleElement = document.createElement('h2');
+                            titleElement.className = 'project-title';
+                            titleElement.textContent = project.name;
+                            projectCard.appendChild(titleElement);
+                        }
+
+                        // Status line
+                        if (project.status_line) {
+                            const statusElement = document.createElement('div');
+                            statusElement.className = 'status-line';
+                            statusElement.textContent = project.status_line;
+                            projectCard.appendChild(statusElement);
+                        }
+
+                        // Progress bar
+                        if (project.progress) {
+                            const progressContainer = document.createElement('div');
+                            progressContainer.className = 'progress-container';
+
+                            if (project.progress.label) {
+                                const progressLabel = document.createElement('div');
+                                progressLabel.className = 'progress-label';
+                                progressLabel.innerHTML = `<span>${project.progress.label}</span><span>${project.progress.done}/${project.progress.total}</span>`;
+                                progressContainer.appendChild(progressLabel);
+                            }
+
+                            const progressBar = document.createElement('div');
+                            progressBar.className = 'progress-bar';
+
+                            const progressFill = document.createElement('div');
+                            progressFill.className = 'progress-fill';
+                            if (project.progress.done && project.progress.total) {
+                                const percentage = (project.progress.done / project.progress.total) * 100;
+                                progressFill.style.width = `${percentage}%`;
+                            }
+
+                            progressBar.appendChild(progressFill);
+                            progressContainer.appendChild(progressBar);
+                            projectCard.appendChild(progressContainer);
+                        }
+
+                        // Live URL
+                        if (project.live_url) {
+                            const liveLink = document.createElement('a');
+                            liveLink.className = 'live-link';
+                            liveLink.href = project.live_url;
+                            liveLink.textContent = 'Live site';
+                            liveLink.target = '_blank';
+                            liveLink.rel = 'noopener noreferrer';
+                            projectCard.appendChild(liveLink);
+                        }
+
+                        // Commits
+                        if (project.commits && project.commits.length > 0) {
+                            const commitsList = document.createElement('ul');
+                            commitsList.className = 'commits-list';
+
+                            project.commits.forEach(commit => {
+                                const commitItem = document.createElement('li');
+                                commitItem.className = 'commit-item';
+
+                                const commitHash = document.createElement('span');
+                                commitHash.className = 'commit-hash';
+                                commitHash.textContent = commit.hash.substring(0, 7);
+
+                                const commitSubject = document.createElement('span');
+                                commitSubject.className = 'commit-subject';
+                                commitSubject.textContent = commit.subject;
+
+                                const commitDate = document.createElement('span');
+                                commitDate.className = 'commit-date';
+                                commitDate.textContent = commit.date;
+
+                                commitItem.appendChild(commitHash);
+                                commitItem.appendChild(commitSubject);
+                                commitItem.appendChild(commitDate);
+                                commitsList.appendChild(commitItem);
+                            });
+
+                            projectCard.appendChild(commitsList);
+                        }
+
+                        projectsContainer.appendChild(projectCard);
+                    });
+                } else {
+                    projectsContainer.innerHTML = '<div class="no-data">No projects to display</div>';
+                }
+            } catch (error) {
+                console.error('Error parsing or rendering data:', error);
+                projectsContainer.innerHTML = '<div class="no-data">Error loading data</div>';
+            }
+        });
+    </script>
+</body>
+</html>

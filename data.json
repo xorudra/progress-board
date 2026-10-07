@@ -1,0 +1,154 @@
+{
+  "generated_at": "2026-10-07T20:13:20+00:00",
+  "projects": [
+    {
+      "slug": "leakguard",
+      "name": "LeakGuard",
+      "status_line": "P2 completion program running \u2014 5/25 P2 phases closed \u00b7 P2-A Records: DONE \u00b7 P2-B Performance: DONE \u00b7 P2-C Observability & alerts: BUILDING \u00b7 P2-D Cost: QUEUED \u00b7 P2-E Scan budget & data quality: QUEUED \u00b7 P2-F Broker depth: QUEUED \u00b7 P2-G Removal depth: QUEUED \u00b7 P2-H Surfaces: QUEUED \u00b7 P2-I Closeout: QUEUED \u00b7 production commit 1387fc4 \u00b7 scoreboard 138 DONE \u00b7 27 PARTIAL \u00b7 1 MISSING \u00b7 1 UNVERIFIED \u00b7 14 NOT APPLICABLE",
+      "progress": {
+        "done": 138,
+        "total": 181,
+        "label": "138 of 181 phases DONE"
+      },
+      "live_url": "https://leakguard-hh8e.onrender.com",
+      "commits": [
+        {
+          "hash": "aa16d1c",
+          "subject": "docs(p2-b): phases 115/116 DONE \u2014 measured performance + scalability record; production 1387fc4 live (138 DONE)",
+          "date": "2026-10-08T01:19:25+05:30"
+        },
+        {
+          "hash": "1387fc4",
+          "subject": "fix(p2-b): batch per-finding notifications (one 3-statement ledger write, in-app only) \u2014 email is the per-cycle summary digest; kills ~3.5s/notice tail and the ~215-emails-per-cycle storm",
+          "date": "2026-10-08T01:01:45+05:30"
+        },
+        {
+          "hash": "c5ddd94",
+          "subject": "chore: re-attribute commit authorship to the project owner; refresh hash references across docs",
+          "date": "2026-10-08T00:41:08+05:30"
+        },
+        {
+          "hash": "6dc62d3",
+          "subject": "perf(p2-b): set-based lifecycle writer (5 constant statements, was 3+N) + benchmarks + scalability record (phases 115/116)",
+          "date": "2026-10-08T00:21:50+05:30"
+        },
+        {
+          "hash": "5bcba19",
+          "subject": "docs(p2-a): phases 80/131/132 verified \u2014 IR tabletop drill, doc review (README 8 fixes), migration-plan annotations; 136 DONE",
+          "date": "2026-10-07T23:58:50+05:30"
+        },
+        {
+          "hash": "5e76ab9",
+          "subject": "docs(phase-149): per-cycle report system \u2014 docs/cycles index + 13 reports (backfill A-D2, staging, v2.1, audit, P0, P1-A, P1-B, 149) + format guard test; phase 149 DONE \u2014 all P1 phases closed (133 DONE)",
+          "date": "2026-10-07T22:58:21+05:30"
+        }
+      ]
+    },
+    {
+      "slug": "dsrclone",
+      "name": "DSRclone",
+      "status_line": "Private repo \u00b7 VAPT platform build in progress \u00b7 latest phase: Prompt 14",
+      "progress": {
+        "done": 14,
+        "total": 40,
+        "label": "14 of 40 spec phases landed"
+      },
+      "live_url": null,
+      "commits": [
+        {
+          "hash": "eb8460f",
+          "subject": "feat(cloud-security): DSRclone Prompt 14 \u2014 multi-cloud security assessment",
+          "date": "2026-10-07T18:19:35+00:00"
+        },
+        {
+          "hash": "0a4a1f7",
+          "subject": "feat(container-security): DSRclone Prompt 13 \u2014 container, Docker & Kubernetes security",
+          "date": "2026-10-07T17:18:37+00:00"
+        },
+        {
+          "hash": "43328bd",
+          "subject": "feat(code-security): DSRclone Prompt 12 \u2014 source code security",
+          "date": "2026-10-07T14:50:50+00:00"
+        },
+        {
+          "hash": "61bc64b",
+          "subject": "feat(vuln-mgmt): DSRclone Prompt 11 \u2014 vulnerability management & intelligence",
+          "date": "2026-10-07T13:49:33+00:00"
+        },
+        {
+          "hash": "b20735a",
+          "subject": "feat(network-vapt): DSRclone Prompt 10 \u2014 network VAPT engine",
+          "date": "2026-10-07T12:05:56+00:00"
+        },
+        {
+          "hash": "d2f6667",
+          "subject": "feat(api-security): DSRclone Prompt 9 \u2014 API security testing & protection assessment",
+          "date": "2026-10-07T07:17:48+00:00"
+        }
+      ]
+    },
+    {
+      "slug": "nexus-local",
+      "name": "Nexus Local",
+      "status_line": "Live \u00b7 capability integration complete (chat failover, image, voice, agent tools)",
+      "progress": null,
+      "live_url": "https://nexus-local.onrender.com",
+      "commits": [
+        {
+          "hash": "6b6e612",
+          "subject": "Security: per-session rate limits (chat 40/min, transcribe 12/min), TOTP replay protection, master password change (re-encrypts both vaults, signs out all sessions)",
+          "date": "2026-10-07T09:02:54+05:30"
+        },
+        {
+          "hash": "69be6b8",
+          "subject": "Voice merge v2: byte-level RIFF parse (stdlib wave chokes on Groq's streaming header differently per Python version)",
+          "date": "2026-10-07T08:47:11+05:30"
+        },
+        {
+          "hash": "cf3d37b",
+          "subject": "Voice fix: Groq WAV streaming header (nframes=2.1B) poisoned the merge \u2014 set format fields individually",
+          "date": "2026-10-07T08:43:55+05:30"
+        },
+        {
+          "hash": "111e185",
+          "subject": "Sync friend access list [auto]",
+          "date": "2026-10-07T08:43:53+05:30"
+        },
+        {
+          "hash": "87e560c",
+          "subject": "Fix Cloudflare (split-key + catalog + CF image gen), Kilo (gateway base + free filter), HF (router base)",
+          "date": "2026-10-07T01:15:36+05:30"
+        },
+        {
+          "hash": "c807e28",
+          "subject": "Sync friend access list [auto]",
+          "date": "2026-10-07T01:15:34+05:30"
+        }
+      ]
+    },
+    {
+      "slug": "siteguard",
+      "name": "SiteGuard",
+      "status_line": "Live, not in active build",
+      "progress": null,
+      "live_url": "https://siteguard-vf9c.onrender.com",
+      "commits": [
+        {
+          "hash": "ae120e7",
+          "subject": "Expand coverage: 28 passive checks + 9 VAPT tests (was 25+6)",
+          "date": "2026-10-02T02:28:31+05:30"
+        },
+        {
+          "hash": "dfaa456",
+          "subject": "VAPT mode = full scan: 25 passive checks + 6 active tests merged",
+          "date": "2026-10-02T01:59:16+05:30"
+        },
+        {
+          "hash": "34dc41c",
+          "subject": "Add OWASP Top 10 mapping + 2 new checks (25 total)",
+          "date": "2026-10-02T01:39:46+05:30"
+        }
+      ]
+    }
+  ]
+}
