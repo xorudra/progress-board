@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-07T20:31:34+00:00",
+  "generated_at": "2026-10-07T20:51:31+00:00",
   "projects": [
     {
       "slug": "leakguard",
@@ -12,6 +12,11 @@
       },
       "live_url": "https://leakguard-hh8e.onrender.com",
       "commits": [
+        {
+          "hash": "3b89d0e",
+          "subject": "feat(p2-d): provider cost control + monitoring (phases 66/124) \u2014 daily usage ledger (0014), operator-set safety budgets with honest typed enforcement, admin provider metrics, provider_budget alert",
+          "date": "2026-10-08T02:17:12+05:30"
+        },
         {
           "hash": "5378087",
           "subject": "docs(p2-c): closeout \u2014 PHASE_STATUS 76/77 DONE (140 DONE), cycle report, CURRENT_STATE production addendum",
@@ -36,11 +41,6 @@
           "hash": "c5ddd94",
           "subject": "chore: re-attribute commit authorship to the project owner; refresh hash references across docs",
           "date": "2026-10-08T00:41:08+05:30"
-        },
-        {
-          "hash": "6dc62d3",
-          "subject": "perf(p2-b): set-based lifecycle writer (5 constant statements, was 3+N) + benchmarks + scalability record (phases 115/116)",
-          "date": "2026-10-08T00:21:50+05:30"
         }
       ]
     },
