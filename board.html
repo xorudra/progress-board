@@ -149,7 +149,7 @@
     <!--DATA_START-->
 <script id="board-data" type="application/json">
 {
-  "generated_at": "2026-10-08T18:21:59+00:00",
+  "generated_at": "2026-10-08T18:32:00+00:00",
   "projects": [
     {
       "slug": "leakguard",
@@ -162,6 +162,11 @@
       },
       "live_url": "https://leakguard-hh8e.onrender.com",
       "commits": [
+        {
+          "hash": "a270e7e",
+          "subject": "Fix /local_agent.py download: extra_headers must be (name, value) pairs",
+          "date": "2026-10-08T23:56:58+05:30"
+        },
         {
           "hash": "1a1199e",
           "subject": "Automatic agent emails + one-click local runner (owner order 2026-10-08)",
@@ -186,11 +191,6 @@
           "hash": "053b1d5",
           "subject": "Agent probes: stop false 'unreachable' verdicts (owner live-run report)",
           "date": "2026-10-08T21:39:01+05:30"
-        },
-        {
-          "hash": "8ff3eb2",
-          "subject": "Fix lifecycle-upgrade test for migration 0017",
-          "date": "2026-10-08T21:00:28+05:30"
         }
       ]
     },
@@ -205,6 +205,11 @@
       },
       "live_url": null,
       "commits": [
+        {
+          "hash": "06a08e9",
+          "subject": "feat: admin dashboard in the owner-selected dark design \u2014 real platform aggregates endpoint, platform-admin flag in token + login reconciliation from the deployment allowlist, Admin nav for platform roles",
+          "date": "2026-10-09T00:00:05+05:30"
+        },
         {
           "hash": "b328627",
           "subject": "fix(web): CSP connect-src must allow the API origin \u2014 'self'-only blocked every browser API call (login failed while API/CORS/credentials were all correct)",
@@ -229,11 +234,6 @@
           "hash": "aa8d2af",
           "subject": "docs: README \u2014 note UptimeRobot monitoring for the Render deployment",
           "date": "2026-10-08T22:09:24+05:30"
-        },
-        {
-          "hash": "00d112c",
-          "subject": "fix(ai): answer HEAD on /health so uptime probes (UptimeRobot default) don't 405",
-          "date": "2026-10-08T22:06:11+05:30"
         }
       ]
     },
