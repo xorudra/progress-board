@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-08T14:14:38+00:00",
+  "generated_at": "2026-10-08T14:34:35+00:00",
   "projects": [
     {
       "slug": "leakguard",
@@ -47,14 +47,19 @@
     {
       "slug": "dsrclone",
       "name": "DSRclone",
-      "status_line": "Private repo \u00b7 VAPT platform build in progress \u00b7 latest phase: Prompt 39",
+      "status_line": "Private repo \u00b7 VAPT platform build in progress \u00b7 latest phase: Prompt 40",
       "progress": {
-        "done": 39,
+        "done": 40,
         "total": 40,
-        "label": "39 of 40 spec phases landed"
+        "label": "40 of 40 spec phases landed"
       },
       "live_url": null,
       "commits": [
+        {
+          "hash": "4a653ab",
+          "subject": "feat(productization): DSRclone Prompt 40 \u2014 SaaS productization, licensing & v1.0 launch preparation",
+          "date": "2026-10-08T14:33:36+00:00"
+        },
         {
           "hash": "518520f",
           "subject": "feat(release-candidate): DSRclone Prompt 39 \u2014 final security hardening, QA & release candidate",
@@ -79,11 +84,6 @@
           "hash": "7599d33",
           "subject": "feat(mobile-binary-v2): DSRclone Prompt 35 \u2014 advanced mobile & binary security V2",
           "date": "2026-10-08T09:24:55+00:00"
-        },
-        {
-          "hash": "6a74450",
-          "subject": "feat(cloud-container-v2): DSRclone Prompt 34 \u2014 advanced cloud & container security V2",
-          "date": "2026-10-08T08:57:17+00:00"
         }
       ]
     },
@@ -94,6 +94,11 @@
       "progress": null,
       "live_url": "https://nexus-local.onrender.com",
       "commits": [
+        {
+          "hash": "b770243",
+          "subject": "Separate auth from owner-key unlock: friends fully usable pre-unlock except genuinely owner-key operations",
+          "date": "2026-10-08T20:04:05+05:30"
+        },
         {
           "hash": "13cb536",
           "subject": "Admin panel: friend list never rendered on page load - the ask-modal markup sat AFTER the script, so a top-level getElementById('ask-cancel') hit null, threw, and killed the script before load() ran (list only appeared after adding a friend, whose handler calls load() directly). Moved the modal markup before the script; proven with a DOM harness: old file throws TypeError, new file renders all friends + sessions on load",
@@ -118,11 +123,6 @@
           "hash": "4fe95e5",
           "subject": "Remove hardcoded master password from test_all_models.py (env-only, no fallback)",
           "date": "2026-10-08T17:48:43+05:30"
-        },
-        {
-          "hash": "4d587f5",
-          "subject": "Fix 2FA/key persistence + admin empty-list scare: keys.enc joins the backup/sync cycle (friend_blob + sync), so 2FA setup and Update Keys changes survive redeploys; admin page redirects to /login on 401 instead of rendering fake-empty lists",
-          "date": "2026-10-08T17:18:28+05:30"
         }
       ]
     },
