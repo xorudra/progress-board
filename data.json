@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-08T08:58:28+00:00",
+  "generated_at": "2026-10-08T09:28:19+00:00",
   "projects": [
     {
       "slug": "leakguard",
@@ -47,14 +47,19 @@
     {
       "slug": "dsrclone",
       "name": "DSRclone",
-      "status_line": "Private repo \u00b7 VAPT platform build in progress \u00b7 latest phase: Prompt 34",
+      "status_line": "Private repo \u00b7 VAPT platform build in progress \u00b7 latest phase: Prompt 35",
       "progress": {
-        "done": 34,
+        "done": 35,
         "total": 40,
-        "label": "34 of 40 spec phases landed"
+        "label": "35 of 40 spec phases landed"
       },
       "live_url": null,
       "commits": [
+        {
+          "hash": "7599d33",
+          "subject": "feat(mobile-binary-v2): DSRclone Prompt 35 \u2014 advanced mobile & binary security V2",
+          "date": "2026-10-08T09:24:55+00:00"
+        },
         {
           "hash": "6a74450",
           "subject": "feat(cloud-container-v2): DSRclone Prompt 34 \u2014 advanced cloud & container security V2",
@@ -79,11 +84,6 @@
           "hash": "9b975b2",
           "subject": "feat(vuln-intel): DSRclone Prompt 30 \u2014 advanced vulnerability intelligence",
           "date": "2026-10-08T06:15:38+00:00"
-        },
-        {
-          "hash": "16d2da2",
-          "subject": "feat(easm): DSRclone Prompt 29 \u2014 external attack surface management",
-          "date": "2026-10-08T05:24:33+00:00"
         }
       ]
     },
