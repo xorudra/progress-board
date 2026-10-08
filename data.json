@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-08T17:00:08+00:00",
+  "generated_at": "2026-10-08T17:16:56+00:00",
   "projects": [
     {
       "slug": "leakguard",
@@ -56,6 +56,11 @@
       "live_url": null,
       "commits": [
         {
+          "hash": "a412b69",
+          "subject": "fix: friendly root routes on api+ai (bare URLs return a service descriptor, not 404); README links point at the real endpoints",
+          "date": "2026-10-08T22:46:04+05:30"
+        },
+        {
           "hash": "aa8d2af",
           "subject": "docs: README \u2014 note UptimeRobot monitoring for the Render deployment",
           "date": "2026-10-08T22:09:24+05:30"
@@ -79,11 +84,6 @@
           "hash": "1ac8f07",
           "subject": "deploy: share one generated JWT_SECRET with api+worker via env group; fix AI health check default port for https URLs",
           "date": "2026-10-08T21:12:45+05:30"
-        },
-        {
-          "hash": "600d248",
-          "subject": "fix: commit source files swallowed by over-broad .gitignore secret/credentials rules",
-          "date": "2026-10-08T21:01:13+05:30"
         }
       ]
     },
