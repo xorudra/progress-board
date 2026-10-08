@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-08T00:54:56+00:00",
+  "generated_at": "2026-10-08T01:04:56+00:00",
   "projects": [
     {
       "slug": "leakguard",
@@ -12,6 +12,11 @@
       },
       "live_url": "https://leakguard-hh8e.onrender.com",
       "commits": [
+        {
+          "hash": "41cfcf7",
+          "subject": "feat(p2-i): closeout batch (phases 175/178) \u2014 scan_latency alert rule (median 24h >= 120s across >= 10 jobs) + latency drill + docs/MONITORING.md; local-only tools audit + KEEP decision recorded, headers sharpened, architecture pins",
+          "date": "2026-10-08T06:30:39+05:30"
+        },
         {
           "hash": "cae75a9",
           "subject": "docs(p2-h): closeout \u2014 PHASE_STATUS 125/40/96/67 DONE (156 DONE), cycle report, CURRENT_STATE addendum",
@@ -36,11 +41,6 @@
           "hash": "5661538",
           "subject": "docs(p2-f): closeout \u2014 PHASE_STATUS 111/162/31/137/166 DONE (149 DONE), cycle report, CURRENT_STATE addendum",
           "date": "2026-10-08T03:54:04+05:30"
-        },
-        {
-          "hash": "0d74ccb",
-          "subject": "feat(p2-f): broker depth (phases 111/162/31/137/166) \u2014 fake-broker E2E harness at the transport seam, workflow_version on attempts (0016) + case-detail endpoint, probe classification matrix, local-probe domain allowlist",
-          "date": "2026-10-08T03:40:26+05:30"
         }
       ]
     },
