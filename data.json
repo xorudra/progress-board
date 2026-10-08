@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-08T11:39:25+00:00",
+  "generated_at": "2026-10-08T11:49:21+00:00",
   "projects": [
     {
       "slug": "leakguard",
@@ -95,6 +95,11 @@
       "live_url": "https://nexus-local.onrender.com",
       "commits": [
         {
+          "hash": "4d587f5",
+          "subject": "Fix 2FA/key persistence + admin empty-list scare: keys.enc joins the backup/sync cycle (friend_blob + sync), so 2FA setup and Update Keys changes survive redeploys; admin page redirects to /login on 401 instead of rendering fake-empty lists",
+          "date": "2026-10-08T17:18:28+05:30"
+        },
+        {
           "hash": "9d7a991",
           "subject": "UI: custom in-theme dropdowns for composer pickers (native selects kept as data layer), custom modal replaces prompt()/confirm()/alert() in admin + dashboard; revoke now also deletes the friend's saved chats",
           "date": "2026-10-08T17:09:11+05:30"
@@ -118,11 +123,6 @@
           "hash": "f461f2c",
           "subject": "Composer: merge output area and input box into one continuous panel (no separating bar/box between them)",
           "date": "2026-10-08T09:10:10+05:30"
-        },
-        {
-          "hash": "707e66c",
-          "subject": "Composer expanded: thread 55vh mobile / 440px desktop, slimmer card margins+padding and title on mobile so chat dominates",
-          "date": "2026-10-08T09:07:01+05:30"
         }
       ]
     },
