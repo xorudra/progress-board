@@ -186,10 +186,16 @@ def build_leakguard():
         ("DONE", "PARTIAL", "MISSING", "UNVERIFIED", "NOT APPLICABLE")
         if k in counts)
     program_state = ("complete" if p2_done == p2_total else "running")
+    p3_closed = (all(statuses.get(p) == "DONE" for p in (85, 123, 176))
+                 and all(statuses.get(p) == "NOT APPLICABLE"
+                         for p in (57, 58)))
+    p3_bit = (" · P3 closeout complete (85 report live · 123/176 verified "
+              "closed · 57/58 out of scope) · scope complete — production "
+              "frozen") if p3_closed else ""
     status_line = (
         f"P2 completion program {program_state} — {p2_done}/{p2_total} "
         f"P2 phases closed · " + " · ".join(batch_bits) +
-        f" · scoreboard {counts_bit}")
+        f" · scoreboard {counts_bit}" + p3_bit)
     return {
         "slug": "leakguard",
         "name": "LeakGuard",
