@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-08T14:49:36+00:00",
+  "generated_at": "2026-10-08T15:05:02+00:00",
   "projects": [
     {
       "slug": "leakguard",
@@ -12,6 +12,11 @@
       },
       "live_url": "https://leakguard-hh8e.onrender.com",
       "commits": [
+        {
+          "hash": "9a5695f",
+          "subject": "Dedicated /signin page in Spotify theme (owner request)",
+          "date": "2026-10-08T20:33:21+05:30"
+        },
         {
           "hash": "bf48494",
           "subject": "Auth screens: owner-chosen Figma design (dark + purple/pink gradient)",
@@ -36,11 +41,6 @@
           "hash": "bcf3b23",
           "subject": "Real-World Validation program: full evidence report",
           "date": "2026-10-08T17:47:05+05:30"
-        },
-        {
-          "hash": "fefc1c1",
-          "subject": "Record RWV Wave 1 fix loop live on production eda0e35",
-          "date": "2026-10-08T14:25:17+05:30"
         }
       ]
     },
