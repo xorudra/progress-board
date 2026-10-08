@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-08T12:39:27+00:00",
+  "generated_at": "2026-10-08T12:49:26+00:00",
   "projects": [
     {
       "slug": "leakguard",
@@ -95,6 +95,11 @@
       "live_url": "https://nexus-local.onrender.com",
       "commits": [
         {
+          "hash": "930ea45",
+          "subject": "Emergency recovery: roll keys/users back to last known-good (pre-rotation) state, 2FA gate cleared for clean re-setup",
+          "date": "2026-10-08T18:11:46+05:30"
+        },
+        {
           "hash": "4fe95e5",
           "subject": "Remove hardcoded master password from test_all_models.py (env-only, no fallback)",
           "date": "2026-10-08T17:48:43+05:30"
@@ -118,11 +123,6 @@
           "hash": "d5e8e41",
           "subject": "Saved chats: per-user encrypted conversation store (login-password AES-GCM, synced to GitHub via friend_blob like accounts/vaults), /api/chats list/get/save/delete, slide-in chats panel with autosave, new/open/delete",
           "date": "2026-10-08T10:27:30+05:30"
-        },
-        {
-          "hash": "5520e27",
-          "subject": "Connections: open to friends (read-only provider status + bring-your-own-key)",
-          "date": "2026-10-08T09:48:21+05:30"
         }
       ]
     },
