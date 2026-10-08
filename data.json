@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-08T15:20:04+00:00",
+  "generated_at": "2026-10-08T15:30:04+00:00",
   "projects": [
     {
       "slug": "leakguard",
@@ -12,6 +12,11 @@
       },
       "live_url": "https://leakguard-hh8e.onrender.com",
       "commits": [
+        {
+          "hash": "4d424c9",
+          "subject": "Sign-up asks for your name too (owner request)",
+          "date": "2026-10-08T20:57:02+05:30"
+        },
         {
           "hash": "0fb1ec1",
           "subject": "Remove on-page CC BY credit line under the sign-in form (owner order)",
@@ -36,11 +41,6 @@
           "hash": "d94f24d",
           "subject": "Docs: F1 broker-data refresh resolution (9 stale URLs fixed, validated)",
           "date": "2026-10-08T19:40:07+05:30"
-        },
-        {
-          "hash": "e6738ba",
-          "subject": "Broker data: correct AdvancedBackgroundChecks opt-out address",
-          "date": "2026-10-08T19:22:37+05:30"
         }
       ]
     },
@@ -55,6 +55,11 @@
       },
       "live_url": null,
       "commits": [
+        {
+          "hash": "84116ec",
+          "subject": "deploy: fix Render Node builds \u2014 corepack-proxy pnpm (no corepack enable), pin Node 22",
+          "date": "2026-10-08T20:57:32+05:30"
+        },
         {
           "hash": "d9f6cac",
           "subject": "deploy: add required ipAllowList to Render Key Value service",
@@ -79,11 +84,6 @@
           "hash": "8a10c2b",
           "subject": "feat(platform-v2): DSRclone Prompt 38 \u2014 production deployment, observability & operations V2",
           "date": "2026-10-08T12:35:01+00:00"
-        },
-        {
-          "hash": "1eb3310",
-          "subject": "feat(reporting-v2): DSRclone Prompt 37 \u2014 advanced reporting, dashboards & client portal V2",
-          "date": "2026-10-08T11:18:36+00:00"
         }
       ]
     },
