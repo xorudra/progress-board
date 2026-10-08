@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-08T15:35:07+00:00",
+  "generated_at": "2026-10-08T15:45:03+00:00",
   "projects": [
     {
       "slug": "leakguard",
@@ -56,6 +56,11 @@
       "live_url": null,
       "commits": [
         {
+          "hash": "1ac8f07",
+          "subject": "deploy: share one generated JWT_SECRET with api+worker via env group; fix AI health check default port for https URLs",
+          "date": "2026-10-08T21:12:45+05:30"
+        },
+        {
           "hash": "600d248",
           "subject": "fix: commit source files swallowed by over-broad .gitignore secret/credentials rules",
           "date": "2026-10-08T21:01:13+05:30"
@@ -79,11 +84,6 @@
           "hash": "4a653ab",
           "subject": "feat(productization): DSRclone Prompt 40 \u2014 SaaS productization, licensing & v1.0 launch preparation",
           "date": "2026-10-08T14:33:36+00:00"
-        },
-        {
-          "hash": "518520f",
-          "subject": "feat(release-candidate): DSRclone Prompt 39 \u2014 final security hardening, QA & release candidate",
-          "date": "2026-10-08T13:29:36+00:00"
         }
       ]
     },
@@ -94,6 +94,11 @@
       "progress": null,
       "live_url": "https://nexus-local.onrender.com",
       "commits": [
+        {
+          "hash": "c9766e3",
+          "subject": "Admin saved chats after 2FA login: wrapped-DEK unlock, no password in session (approved design)",
+          "date": "2026-10-08T21:13:59+05:30"
+        },
         {
           "hash": "b770243",
           "subject": "Separate auth from owner-key unlock: friends fully usable pre-unlock except genuinely owner-key operations",
@@ -118,11 +123,6 @@
           "hash": "930ea45",
           "subject": "Emergency recovery: roll keys/users back to last known-good (pre-rotation) state, 2FA gate cleared for clean re-setup",
           "date": "2026-10-08T18:11:46+05:30"
-        },
-        {
-          "hash": "4fe95e5",
-          "subject": "Remove hardcoded master password from test_all_models.py (env-only, no fallback)",
-          "date": "2026-10-08T17:48:43+05:30"
         }
       ]
     },
