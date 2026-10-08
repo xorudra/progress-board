@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-08T18:47:00+00:00",
+  "generated_at": "2026-10-08T19:26:12+00:00",
   "projects": [
     {
       "slug": "leakguard",
@@ -95,6 +95,11 @@
       "live_url": "https://nexus-local.onrender.com",
       "commits": [
         {
+          "hash": "edb38ea",
+          "subject": "Admin page: Dashdark-style restyle (owner-approved, visuals only)",
+          "date": "2026-10-09T00:53:15+05:30"
+        },
+        {
           "hash": "8a302ca",
           "subject": "Production hardening P5: accessibility pass (labels, contrast, type)",
           "date": "2026-10-08T23:46:38+05:30"
@@ -118,11 +123,6 @@
           "hash": "b770243",
           "subject": "Separate auth from owner-key unlock: friends fully usable pre-unlock except genuinely owner-key operations",
           "date": "2026-10-08T20:04:05+05:30"
-        },
-        {
-          "hash": "13cb536",
-          "subject": "Admin panel: friend list never rendered on page load - the ask-modal markup sat AFTER the script, so a top-level getElementById('ask-cancel') hit null, threw, and killed the script before load() ran (list only appeared after adding a friend, whose handler calls load() directly). Moved the modal markup before the script; proven with a DOM harness: old file throws TypeError, new file renders all friends + sessions on load",
-          "date": "2026-10-08T19:23:55+05:30"
         }
       ]
     },
