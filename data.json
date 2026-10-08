@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-08T17:26:56+00:00",
+  "generated_at": "2026-10-08T17:41:58+00:00",
   "projects": [
     {
       "slug": "leakguard",
@@ -12,6 +12,11 @@
       },
       "live_url": "https://leakguard-hh8e.onrender.com",
       "commits": [
+        {
+          "hash": "5d2e975",
+          "subject": "Docs: record the email-coverage pass (0b93b26)",
+          "date": "2026-10-08T23:09:02+05:30"
+        },
         {
           "hash": "0b93b26",
           "subject": "Email coverage: published removal/privacy emails for 20 more brokers",
@@ -36,11 +41,6 @@
           "hash": "4d424c9",
           "subject": "Sign-up asks for your name too (owner request)",
           "date": "2026-10-08T20:57:02+05:30"
-        },
-        {
-          "hash": "0fb1ec1",
-          "subject": "Remove on-page CC BY credit line under the sign-in form (owner order)",
-          "date": "2026-10-08T20:42:21+05:30"
         }
       ]
     },
@@ -55,6 +55,11 @@
       },
       "live_url": null,
       "commits": [
+        {
+          "hash": "9a578d8",
+          "subject": "docs: README rewritten \u2014 clean structure, status-at-a-glance, compact 40-phase map, honest limitations",
+          "date": "2026-10-08T23:10:28+05:30"
+        },
         {
           "hash": "331ba90",
           "subject": "fix(api): mark root info route @Public (global JWT guard 401'd it)",
@@ -79,11 +84,6 @@
           "hash": "c278b1c",
           "subject": "docs: README \u2014 live Render deployment section with service URLs",
           "date": "2026-10-08T21:29:28+05:30"
-        },
-        {
-          "hash": "a169b12",
-          "subject": "deploy: fromGroup entries must be standalone (no key field) in Render blueprints",
-          "date": "2026-10-08T21:17:25+05:30"
         }
       ]
     },
