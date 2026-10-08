@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-08T13:19:31+00:00",
+  "generated_at": "2026-10-08T13:34:31+00:00",
   "projects": [
     {
       "slug": "leakguard",
@@ -47,14 +47,19 @@
     {
       "slug": "dsrclone",
       "name": "DSRclone",
-      "status_line": "Private repo \u00b7 VAPT platform build in progress \u00b7 latest phase: Prompt 38",
+      "status_line": "Private repo \u00b7 VAPT platform build in progress \u00b7 latest phase: Prompt 39",
       "progress": {
-        "done": 38,
+        "done": 39,
         "total": 40,
-        "label": "38 of 40 spec phases landed"
+        "label": "39 of 40 spec phases landed"
       },
       "live_url": null,
       "commits": [
+        {
+          "hash": "518520f",
+          "subject": "feat(release-candidate): DSRclone Prompt 39 \u2014 final security hardening, QA & release candidate",
+          "date": "2026-10-08T13:29:36+00:00"
+        },
         {
           "hash": "8a10c2b",
           "subject": "feat(platform-v2): DSRclone Prompt 38 \u2014 production deployment, observability & operations V2",
@@ -79,11 +84,6 @@
           "hash": "6a74450",
           "subject": "feat(cloud-container-v2): DSRclone Prompt 34 \u2014 advanced cloud & container security V2",
           "date": "2026-10-08T08:57:17+00:00"
-        },
-        {
-          "hash": "7d5ccff",
-          "subject": "feat(network-v2): DSRclone Prompt 33 \u2014 advanced network VAPT V2",
-          "date": "2026-10-08T08:16:13+00:00"
         }
       ]
     },
@@ -94,6 +94,11 @@
       "progress": null,
       "live_url": "https://nexus-local.onrender.com",
       "commits": [
+        {
+          "hash": "a02ff2e",
+          "subject": "Restart-proof friend list + truthful 2FA status: access list mirrored to access.enc under a server-held restore key (env NEXUS_RESTORE_KEY) and rebuilt at boot; friend logins decoupled from key unlock (chat/transcribe return a clear locked message until admin login); admin panel reads 2FA state from the session on load",
+          "date": "2026-10-08T19:00:48+05:30"
+        },
         {
           "hash": "dfe31fb",
           "subject": "Audit quick wins: /api/usage never sent HTTP headers (raw JSON to socket -> 502) - fixed, plus per-line parse guards in usage/quotas handlers, legacy friend-hash upgrade on login, JSON 401 for /api/models, 400 on invalid routing mode",
@@ -118,11 +123,6 @@
           "hash": "9d7a991",
           "subject": "UI: custom in-theme dropdowns for composer pickers (native selects kept as data layer), custom modal replaces prompt()/confirm()/alert() in admin + dashboard; revoke now also deletes the friend's saved chats",
           "date": "2026-10-08T17:09:11+05:30"
-        },
-        {
-          "hash": "7411282",
-          "subject": "Perf: remove always-on repaint animations (fullscreen grain shift, fog drift, title flicker, logo glow, send-button pulse) \u2014 same look, static; only cheap transform/typing animations remain",
-          "date": "2026-10-08T10:36:42+05:30"
         }
       ]
     },
