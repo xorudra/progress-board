@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-08T06:16:30+00:00",
+  "generated_at": "2026-10-08T06:41:33+00:00",
   "projects": [
     {
       "slug": "leakguard",
@@ -12,6 +12,11 @@
       },
       "live_url": "https://leakguard-hh8e.onrender.com",
       "commits": [
+        {
+          "hash": "d4d2f0b",
+          "subject": "docs(p3-closeout): deploy record \u2014 30c5741 live on staging + production, freeze re-anchored",
+          "date": "2026-10-08T12:10:16+05:30"
+        },
         {
           "hash": "30c5741",
           "subject": "P3 closeout (owner-approved): Phase 85 report + 123/176 verification closes + 57/58 decision",
@@ -36,11 +41,6 @@
           "hash": "cae75a9",
           "subject": "docs(p2-h): closeout \u2014 PHASE_STATUS 125/40/96/67 DONE (156 DONE), cycle report, CURRENT_STATE addendum",
           "date": "2026-10-08T06:03:26+05:30"
-        },
-        {
-          "hash": "192ce5e",
-          "subject": "feat(p2-h): surfaces (phases 125/40/96/67) \u2014 per-broker verification + workflow health dashboard, search-exposure view (cap review: keep 6), accessibility pass + checks, no-store cache policy pinned at the response choke point",
-          "date": "2026-10-08T05:07:33+05:30"
         }
       ]
     },
