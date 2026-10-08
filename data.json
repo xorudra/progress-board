@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-08T13:44:36+00:00",
+  "generated_at": "2026-10-08T13:54:29+00:00",
   "projects": [
     {
       "slug": "leakguard",
@@ -12,6 +12,11 @@
       },
       "live_url": "https://leakguard-hh8e.onrender.com",
       "commits": [
+        {
+          "hash": "e6738ba",
+          "subject": "Broker data: correct AdvancedBackgroundChecks opt-out address",
+          "date": "2026-10-08T19:22:37+05:30"
+        },
         {
           "hash": "461ef91",
           "subject": "Broker data refresh: replace 9 stale (404) opt-out addresses",
@@ -36,11 +41,6 @@
           "hash": "165da84",
           "subject": "docs(readme): document the on-demand exposure & removal report",
           "date": "2026-10-08T13:15:22+05:30"
-        },
-        {
-          "hash": "d4d2f0b",
-          "subject": "docs(p3-closeout): deploy record \u2014 30c5741 live on staging + production, freeze re-anchored",
-          "date": "2026-10-08T12:10:16+05:30"
         }
       ]
     },
@@ -95,6 +95,11 @@
       "live_url": "https://nexus-local.onrender.com",
       "commits": [
         {
+          "hash": "13cb536",
+          "subject": "Admin panel: friend list never rendered on page load - the ask-modal markup sat AFTER the script, so a top-level getElementById('ask-cancel') hit null, threw, and killed the script before load() ran (list only appeared after adding a friend, whose handler calls load() directly). Moved the modal markup before the script; proven with a DOM harness: old file throws TypeError, new file renders all friends + sessions on load",
+          "date": "2026-10-08T19:23:55+05:30"
+        },
+        {
           "hash": "a02ff2e",
           "subject": "Restart-proof friend list + truthful 2FA status: access list mirrored to access.enc under a server-held restore key (env NEXUS_RESTORE_KEY) and rebuilt at boot; friend logins decoupled from key unlock (chat/transcribe return a clear locked message until admin login); admin panel reads 2FA state from the session on load",
           "date": "2026-10-08T19:00:48+05:30"
@@ -118,11 +123,6 @@
           "hash": "4d587f5",
           "subject": "Fix 2FA/key persistence + admin empty-list scare: keys.enc joins the backup/sync cycle (friend_blob + sync), so 2FA setup and Update Keys changes survive redeploys; admin page redirects to /login on 401 instead of rendering fake-empty lists",
           "date": "2026-10-08T17:18:28+05:30"
-        },
-        {
-          "hash": "9d7a991",
-          "subject": "UI: custom in-theme dropdowns for composer pickers (native selects kept as data layer), custom modal replaces prompt()/confirm()/alert() in admin + dashboard; revoke now also deletes the friend's saved chats",
-          "date": "2026-10-08T17:09:11+05:30"
         }
       ]
     },
