@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-08T19:56:06+00:00",
+  "generated_at": "2026-10-08T20:21:08+00:00",
   "projects": [
     {
       "slug": "leakguard",
@@ -56,6 +56,11 @@
       "live_url": null,
       "commits": [
         {
+          "hash": "5bda348",
+          "subject": "feat(web): Horizon hero section integrated (shadcn structure) at /horizon",
+          "date": "2026-10-09T01:48:10+05:30"
+        },
+        {
           "hash": "01d87e8",
           "subject": "fix: carry the user's name in the token so /auth/me returns it (admin greeting said 'Admin' instead of the owner's name)",
           "date": "2026-10-09T00:10:09+05:30"
@@ -79,11 +84,6 @@
           "hash": "331ba90",
           "subject": "fix(api): mark root info route @Public (global JWT guard 401'd it)",
           "date": "2026-10-08T22:55:32+05:30"
-        },
-        {
-          "hash": "a412b69",
-          "subject": "fix: friendly root routes on api+ai (bare URLs return a service descriptor, not 404); README links point at the real endpoints",
-          "date": "2026-10-08T22:46:04+05:30"
         }
       ]
     },
@@ -94,6 +94,11 @@
       "progress": null,
       "live_url": "https://nexus-local.onrender.com",
       "commits": [
+        {
+          "hash": "9625bb9",
+          "subject": "Horizon hero page for Nexus (owner request): vanilla port, vendored libs",
+          "date": "2026-10-09T01:51:00+05:30"
+        },
         {
           "hash": "6c153b1",
           "subject": "Temporary view passes: admin-minted read-only links (owner-approved)",
@@ -118,11 +123,6 @@
           "hash": "03c33b0",
           "subject": "Remove dead admin chat store (clean start, owner-approved)",
           "date": "2026-10-08T21:20:17+05:30"
-        },
-        {
-          "hash": "c9766e3",
-          "subject": "Admin saved chats after 2FA login: wrapped-DEK unlock, no password in session (approved design)",
-          "date": "2026-10-08T21:13:59+05:30"
         }
       ]
     },
