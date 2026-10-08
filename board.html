@@ -149,7 +149,7 @@
     <!--DATA_START-->
 <script id="board-data" type="application/json">
 {
-  "generated_at": "2026-10-08T18:07:00+00:00",
+  "generated_at": "2026-10-08T18:16:59+00:00",
   "projects": [
     {
       "slug": "leakguard",
@@ -162,6 +162,11 @@
       },
       "live_url": "https://leakguard-hh8e.onrender.com",
       "commits": [
+        {
+          "hash": "1a1199e",
+          "subject": "Automatic agent emails + one-click local runner (owner order 2026-10-08)",
+          "date": "2026-10-08T23:45:13+05:30"
+        },
         {
           "hash": "5d2e975",
           "subject": "Docs: record the email-coverage pass (0b93b26)",
@@ -186,11 +191,6 @@
           "hash": "8ff3eb2",
           "subject": "Fix lifecycle-upgrade test for migration 0017",
           "date": "2026-10-08T21:00:28+05:30"
-        },
-        {
-          "hash": "4d424c9",
-          "subject": "Sign-up asks for your name too (owner request)",
-          "date": "2026-10-08T20:57:02+05:30"
         }
       ]
     },
@@ -245,6 +245,16 @@
       "live_url": "https://nexus-local.onrender.com",
       "commits": [
         {
+          "hash": "8a302ca",
+          "subject": "Production hardening P5: accessibility pass (labels, contrast, type)",
+          "date": "2026-10-08T23:46:38+05:30"
+        },
+        {
+          "hash": "f4b3df2",
+          "subject": "Production hardening P1+P2: 39 new tests, redacted error logging, JSON-500 wrapper, usage rotation, /health",
+          "date": "2026-10-08T23:42:51+05:30"
+        },
+        {
           "hash": "03c33b0",
           "subject": "Remove dead admin chat store (clean start, owner-approved)",
           "date": "2026-10-08T21:20:17+05:30"
@@ -263,16 +273,6 @@
           "hash": "13cb536",
           "subject": "Admin panel: friend list never rendered on page load - the ask-modal markup sat AFTER the script, so a top-level getElementById('ask-cancel') hit null, threw, and killed the script before load() ran (list only appeared after adding a friend, whose handler calls load() directly). Moved the modal markup before the script; proven with a DOM harness: old file throws TypeError, new file renders all friends + sessions on load",
           "date": "2026-10-08T19:23:55+05:30"
-        },
-        {
-          "hash": "a02ff2e",
-          "subject": "Restart-proof friend list + truthful 2FA status: access list mirrored to access.enc under a server-held restore key (env NEXUS_RESTORE_KEY) and rebuilt at boot; friend logins decoupled from key unlock (chat/transcribe return a clear locked message until admin login); admin panel reads 2FA state from the session on load",
-          "date": "2026-10-08T19:00:48+05:30"
-        },
-        {
-          "hash": "dfe31fb",
-          "subject": "Audit quick wins: /api/usage never sent HTTP headers (raw JSON to socket -> 502) - fixed, plus per-line parse guards in usage/quotas handlers, legacy friend-hash upgrade on login, JSON 401 for /api/models, 400 on invalid routing mode",
-          "date": "2026-10-08T18:46:13+05:30"
         }
       ]
     },
