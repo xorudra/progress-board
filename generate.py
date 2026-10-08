@@ -106,15 +106,25 @@ def github_commits(owner_repo: str, count: int):
     return commits or None
 
 
-def commits_for(candidates, owner_repo, count):
+def commits_for(candidates, owner_repo, count, skip_auto=False):
+    # skip_auto: scan deeper and drop "[auto]" sync commits (the Nexus
+    # friend-backup watchdog lands many of those; they bury the real work).
+    fetch = count * 8 if skip_auto else count
+
+    def keep(commits):
+        if not skip_auto:
+            return commits
+        return [c for c in commits
+                if "[auto]" not in c["subject"]][:count]
+
     repo = newest_local_repo(candidates)
     if repo:
-        got = git_log(repo, count)
+        got = git_log(repo, fetch)
         if got:
-            return got, f"local {repo}"
-    got = github_commits(owner_repo, count)
+            return keep(got), f"local {repo}"
+    got = github_commits(owner_repo, fetch)
     if got:
-        return got, f"github api {owner_repo}"
+        return keep(got), f"github api {owner_repo}"
     return [], "none"
 
 # ---------------------------------------------------------------- leakguard
@@ -175,10 +185,11 @@ def build_leakguard():
         f"{counts[k]} {k}" for k in
         ("DONE", "PARTIAL", "MISSING", "UNVERIFIED", "NOT APPLICABLE")
         if k in counts)
+    program_state = ("complete" if p2_done == p2_total else "running")
     status_line = (
-        f"P2 completion program running — {p2_done}/{p2_total} P2 phases "
-        f"closed · " + " · ".join(batch_bits) +
-        f" · production commit 1387fc4 · scoreboard {counts_bit}")
+        f"P2 completion program {program_state} — {p2_done}/{p2_total} "
+        f"P2 phases closed · " + " · ".join(batch_bits) +
+        f" · scoreboard {counts_bit}")
     return {
         "slug": "leakguard",
         "name": "LeakGuard",
@@ -231,9 +242,16 @@ def build_dsrclone():
 # ---------------------------------------------------------------- others
 
 def build_nexus():
-    cands = [HOME / "workspace/Nexus-Local", HOME / "workspace/nexus-local",
+    # local-dashboard is the live Nexus working tree (remote
+    # xorudra/Nexus-Local). The nexus-rewrite mirror is a bare clone the
+    # refresh hook cannot reset, so it froze at the history-rewrite
+    # commit; newest_local_repo picks whichever HEAD is newest, and the
+    # [auto] friend-sync commits are filtered out of the display list.
+    cands = [HOME / "workspace/local-dashboard",
+             HOME / "workspace/Nexus-Local", HOME / "workspace/nexus-local",
              HOME / "workspace/nexus-rewrite"]
-    commits, _src = commits_for(cands, "xorudra/Nexus-Local", 6)
+    commits, _src = commits_for(cands, "xorudra/Nexus-Local", 6,
+                                skip_auto=True)
     return {
         "slug": "nexus-local",
         "name": "Nexus Local",

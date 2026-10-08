@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-10-08T06:51:35+00:00",
+  "generated_at": "2026-10-08T07:26:37+00:00",
   "projects": [
     {
       "slug": "leakguard",
       "name": "LeakGuard",
-      "status_line": "P2 completion program running \u2014 25/25 P2 phases closed \u00b7 P2-A Records: DONE \u00b7 P2-B Performance: DONE \u00b7 P2-C Observability & alerts: DONE \u00b7 P2-D Cost: DONE \u00b7 P2-E Scan budget & data quality: DONE \u00b7 P2-F Broker depth: DONE \u00b7 P2-G Removal depth: DONE \u00b7 P2-H Surfaces: DONE \u00b7 P2-I Closeout: DONE \u00b7 production commit 1387fc4 \u00b7 scoreboard 161 DONE \u00b7 3 PARTIAL \u00b7 1 MISSING \u00b7 0 UNVERIFIED \u00b7 16 NOT APPLICABLE",
+      "status_line": "P2 completion program complete \u2014 25/25 P2 phases closed \u00b7 P2-A Records: DONE \u00b7 P2-B Performance: DONE \u00b7 P2-C Observability & alerts: DONE \u00b7 P2-D Cost: DONE \u00b7 P2-E Scan budget & data quality: DONE \u00b7 P2-F Broker depth: DONE \u00b7 P2-G Removal depth: DONE \u00b7 P2-H Surfaces: DONE \u00b7 P2-I Closeout: DONE \u00b7 scoreboard 161 DONE \u00b7 3 PARTIAL \u00b7 1 MISSING \u00b7 0 UNVERIFIED \u00b7 16 NOT APPLICABLE",
       "progress": {
         "done": 161,
         "total": 181,
@@ -47,14 +47,19 @@
     {
       "slug": "dsrclone",
       "name": "DSRclone",
-      "status_line": "Private repo \u00b7 VAPT platform build in progress \u00b7 latest phase: Prompt 31",
+      "status_line": "Private repo \u00b7 VAPT platform build in progress \u00b7 latest phase: Prompt 32",
       "progress": {
-        "done": 31,
+        "done": 32,
         "total": 40,
-        "label": "31 of 40 spec phases landed"
+        "label": "32 of 40 spec phases landed"
       },
       "live_url": null,
       "commits": [
+        {
+          "hash": "de2f32e",
+          "subject": "feat(web-api-v2): DSRclone Prompt 32 \u2014 advanced web & API security testing V2",
+          "date": "2026-10-08T07:23:06+00:00"
+        },
         {
           "hash": "fef85de",
           "subject": "feat(remediation): DSRclone Prompt 31 \u2014 remediation orchestration & SLA management",
@@ -79,11 +84,6 @@
           "hash": "acf2496",
           "subject": "feat(data-lake): DSRclone Prompt 27 \u2014 security data lake & advanced analytics",
           "date": "2026-10-08T04:13:00+00:00"
-        },
-        {
-          "hash": "1cb20c8",
-          "subject": "feat(grc): DSRclone Prompt 26 \u2014 compliance, audit & GRC platform",
-          "date": "2026-10-08T03:26:17+00:00"
         }
       ]
     },
@@ -95,34 +95,34 @@
       "live_url": "https://nexus-local.onrender.com",
       "commits": [
         {
-          "hash": "6b6e612",
-          "subject": "Security: per-session rate limits (chat 40/min, transcribe 12/min), TOTP replay protection, master password change (re-encrypts both vaults, signs out all sessions)",
-          "date": "2026-10-07T09:02:54+05:30"
+          "hash": "7411282",
+          "subject": "Perf: remove always-on repaint animations (fullscreen grain shift, fog drift, title flicker, logo glow, send-button pulse) \u2014 same look, static; only cheap transform/typing animations remain",
+          "date": "2026-10-08T10:36:42+05:30"
         },
         {
-          "hash": "69be6b8",
-          "subject": "Voice merge v2: byte-level RIFF parse (stdlib wave chokes on Groq's streaming header differently per Python version)",
-          "date": "2026-10-07T08:47:11+05:30"
+          "hash": "d5e8e41",
+          "subject": "Saved chats: per-user encrypted conversation store (login-password AES-GCM, synced to GitHub via friend_blob like accounts/vaults), /api/chats list/get/save/delete, slide-in chats panel with autosave, new/open/delete",
+          "date": "2026-10-08T10:27:30+05:30"
         },
         {
-          "hash": "cf3d37b",
-          "subject": "Voice fix: Groq WAV streaming header (nframes=2.1B) poisoned the merge \u2014 set format fields individually",
-          "date": "2026-10-07T08:43:55+05:30"
+          "hash": "5520e27",
+          "subject": "Connections: open to friends (read-only provider status + bring-your-own-key)",
+          "date": "2026-10-08T09:48:21+05:30"
         },
         {
-          "hash": "111e185",
-          "subject": "Sync friend access list [auto]",
-          "date": "2026-10-07T08:43:53+05:30"
+          "hash": "f461f2c",
+          "subject": "Composer: merge output area and input box into one continuous panel (no separating bar/box between them)",
+          "date": "2026-10-08T09:10:10+05:30"
         },
         {
-          "hash": "87e560c",
-          "subject": "Fix Cloudflare (split-key + catalog + CF image gen), Kilo (gateway base + free filter), HF (router base)",
-          "date": "2026-10-07T01:15:36+05:30"
+          "hash": "707e66c",
+          "subject": "Composer expanded: thread 55vh mobile / 440px desktop, slimmer card margins+padding and title on mobile so chat dominates",
+          "date": "2026-10-08T09:07:01+05:30"
         },
         {
-          "hash": "c807e28",
-          "subject": "Sync friend access list [auto]",
-          "date": "2026-10-07T01:15:34+05:30"
+          "hash": "a00e0ea",
+          "subject": "My Keys: group friend key fields into collapsed FreeLLMAPI / Relay expanders with lane guidance (matches admin Update Keys)",
+          "date": "2026-10-08T09:02:31+05:30"
         }
       ]
     },
