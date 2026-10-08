@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-08T15:50:04+00:00",
+  "generated_at": "2026-10-08T15:55:03+00:00",
   "projects": [
     {
       "slug": "leakguard",
@@ -95,6 +95,11 @@
       "live_url": "https://nexus-local.onrender.com",
       "commits": [
         {
+          "hash": "03c33b0",
+          "subject": "Remove dead admin chat store (clean start, owner-approved)",
+          "date": "2026-10-08T21:20:17+05:30"
+        },
+        {
           "hash": "c9766e3",
           "subject": "Admin saved chats after 2FA login: wrapped-DEK unlock, no password in session (approved design)",
           "date": "2026-10-08T21:13:59+05:30"
@@ -118,11 +123,6 @@
           "hash": "dfe31fb",
           "subject": "Audit quick wins: /api/usage never sent HTTP headers (raw JSON to socket -> 502) - fixed, plus per-line parse guards in usage/quotas handlers, legacy friend-hash upgrade on login, JSON 401 for /api/models, 400 on invalid routing mode",
           "date": "2026-10-08T18:46:13+05:30"
-        },
-        {
-          "hash": "930ea45",
-          "subject": "Emergency recovery: roll keys/users back to last known-good (pre-rotation) state, 2FA gate cleared for clean re-setup",
-          "date": "2026-10-08T18:11:46+05:30"
         }
       ]
     },
