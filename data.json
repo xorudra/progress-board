@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-08T02:12:01+00:00",
+  "generated_at": "2026-10-08T02:42:06+00:00",
   "projects": [
     {
       "slug": "leakguard",
@@ -47,14 +47,19 @@
     {
       "slug": "dsrclone",
       "name": "DSRclone",
-      "status_line": "Private repo \u00b7 VAPT platform build in progress \u00b7 latest phase: Prompt 24",
+      "status_line": "Private repo \u00b7 VAPT platform build in progress \u00b7 latest phase: Prompt 25",
       "progress": {
-        "done": 24,
+        "done": 25,
         "total": 40,
-        "label": "24 of 40 spec phases landed"
+        "label": "25 of 40 spec phases landed"
       },
       "live_url": null,
       "commits": [
+        {
+          "hash": "276b027",
+          "subject": "feat(deployment): DSRclone Prompt 25 \u2014 enterprise deployment, high availability & disaster recovery",
+          "date": "2026-10-08T02:41:00+00:00"
+        },
         {
           "hash": "1a075f5",
           "subject": "feat(integrations): DSRclone Prompt 24 \u2014 integrations & DevSecOps ecosystem",
@@ -79,11 +84,6 @@
           "hash": "c5ebe52",
           "subject": "feat(reporting): DSRclone Prompt 20 \u2014 unified reporting engine & executive dashboard",
           "date": "2026-10-07T23:44:01+00:00"
-        },
-        {
-          "hash": "9d51a7c",
-          "subject": "feat(wireless-security): DSRclone Prompt 19 \u2014 wireless security assessment",
-          "date": "2026-10-07T23:06:26+00:00"
         }
       ]
     },
