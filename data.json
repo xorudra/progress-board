@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-08T14:09:31+00:00",
+  "generated_at": "2026-10-08T14:14:38+00:00",
   "projects": [
     {
       "slug": "leakguard",
@@ -12,6 +12,11 @@
       },
       "live_url": "https://leakguard-hh8e.onrender.com",
       "commits": [
+        {
+          "hash": "d94f24d",
+          "subject": "Docs: F1 broker-data refresh resolution (9 stale URLs fixed, validated)",
+          "date": "2026-10-08T19:40:07+05:30"
+        },
         {
           "hash": "e6738ba",
           "subject": "Broker data: correct AdvancedBackgroundChecks opt-out address",
@@ -36,11 +41,6 @@
           "hash": "eda0e35",
           "subject": "RWV Wave 1 fix loop: correct 8 overstated public claims",
           "date": "2026-10-08T14:17:02+05:30"
-        },
-        {
-          "hash": "165da84",
-          "subject": "docs(readme): document the on-demand exposure & removal report",
-          "date": "2026-10-08T13:15:22+05:30"
         }
       ]
     },
