@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-08T04:18:37+00:00",
+  "generated_at": "2026-10-08T04:53:40+00:00",
   "projects": [
     {
       "slug": "leakguard",
@@ -47,14 +47,19 @@
     {
       "slug": "dsrclone",
       "name": "DSRclone",
-      "status_line": "Private repo \u00b7 VAPT platform build in progress \u00b7 latest phase: Prompt 27",
+      "status_line": "Private repo \u00b7 VAPT platform build in progress \u00b7 latest phase: Prompt 28",
       "progress": {
-        "done": 27,
+        "done": 28,
         "total": 40,
-        "label": "27 of 40 spec phases landed"
+        "label": "28 of 40 spec phases landed"
       },
       "live_url": null,
       "commits": [
+        {
+          "hash": "7a20eb0",
+          "subject": "feat(soc): DSRclone Prompt 28 \u2014 SOC, SIEM & threat intelligence operations",
+          "date": "2026-10-08T04:53:07+00:00"
+        },
         {
           "hash": "acf2496",
           "subject": "feat(data-lake): DSRclone Prompt 27 \u2014 security data lake & advanced analytics",
@@ -79,11 +84,6 @@
           "hash": "cf7ef76",
           "subject": "feat(enterprise-auth): DSRclone Prompt 23 \u2014 enterprise authentication, SSO, MFA & SCIM",
           "date": "2026-10-08T01:27:08+00:00"
-        },
-        {
-          "hash": "5bda8a3",
-          "subject": "feat(monitoring-scheduler): DSRclone Prompt 22 \u2014 continuous monitoring & intelligent scheduler",
-          "date": "2026-10-08T00:50:55+00:00"
         }
       ]
     },
