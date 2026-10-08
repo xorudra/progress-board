@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-08T17:21:57+00:00",
+  "generated_at": "2026-10-08T17:26:56+00:00",
   "projects": [
     {
       "slug": "leakguard",
@@ -56,6 +56,11 @@
       "live_url": null,
       "commits": [
         {
+          "hash": "331ba90",
+          "subject": "fix(api): mark root info route @Public (global JWT guard 401'd it)",
+          "date": "2026-10-08T22:55:32+05:30"
+        },
+        {
           "hash": "a412b69",
           "subject": "fix: friendly root routes on api+ai (bare URLs return a service descriptor, not 404); README links point at the real endpoints",
           "date": "2026-10-08T22:46:04+05:30"
@@ -79,11 +84,6 @@
           "hash": "a169b12",
           "subject": "deploy: fromGroup entries must be standalone (no key field) in Render blueprints",
           "date": "2026-10-08T21:17:25+05:30"
-        },
-        {
-          "hash": "1ac8f07",
-          "subject": "deploy: share one generated JWT_SECRET with api+worker via env group; fix AI health check default port for https URLs",
-          "date": "2026-10-08T21:12:45+05:30"
         }
       ]
     },
