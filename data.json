@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-08T13:04:39+00:00",
+  "generated_at": "2026-10-08T13:19:31+00:00",
   "projects": [
     {
       "slug": "leakguard",
@@ -95,6 +95,11 @@
       "live_url": "https://nexus-local.onrender.com",
       "commits": [
         {
+          "hash": "dfe31fb",
+          "subject": "Audit quick wins: /api/usage never sent HTTP headers (raw JSON to socket -> 502) - fixed, plus per-line parse guards in usage/quotas handlers, legacy friend-hash upgrade on login, JSON 401 for /api/models, 400 on invalid routing mode",
+          "date": "2026-10-08T18:46:13+05:30"
+        },
+        {
           "hash": "930ea45",
           "subject": "Emergency recovery: roll keys/users back to last known-good (pre-rotation) state, 2FA gate cleared for clean re-setup",
           "date": "2026-10-08T18:11:46+05:30"
@@ -118,11 +123,6 @@
           "hash": "7411282",
           "subject": "Perf: remove always-on repaint animations (fullscreen grain shift, fog drift, title flicker, logo glow, send-button pulse) \u2014 same look, static; only cheap transform/typing animations remain",
           "date": "2026-10-08T10:36:42+05:30"
-        },
-        {
-          "hash": "d5e8e41",
-          "subject": "Saved chats: per-user encrypted conversation store (login-password AES-GCM, synced to GitHub via friend_blob like accounts/vaults), /api/chats list/get/save/delete, slide-in chats panel with autosave, new/open/delete",
-          "date": "2026-10-08T10:27:30+05:30"
         }
       ]
     },
