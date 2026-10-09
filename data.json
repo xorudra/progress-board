@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-09T02:40:00+00:00",
+  "generated_at": "2026-10-09T02:50:00+00:00",
   "projects": [
     {
       "slug": "leakguard",
@@ -56,6 +56,11 @@
       "live_url": null,
       "commits": [
         {
+          "hash": "1e0fbfa",
+          "subject": "feat(web): replace sidebar with design #3 from the owner-selected 8-sidebars file \u2014 flush near-black panel, workspace switcher box, live search with Cmd+K badge, monochrome grey-pill active rows, profile pinned at bottom (previous floating glass sidebar rejected by owner)",
+          "date": "2026-10-09T08:18:52+05:30"
+        },
+        {
           "hash": "a516f20",
           "subject": "fix(web): sidebar rail fly-out labels now render position:fixed measured from the hovered row (the scrolling nav clipped the absolute labels and grew a stray horizontal scrollbar in rail mode)",
           "date": "2026-10-09T08:05:51+05:30"
@@ -79,11 +84,6 @@
           "hash": "5bda348",
           "subject": "feat(web): Horizon hero section integrated (shadcn structure) at /horizon",
           "date": "2026-10-09T01:48:10+05:30"
-        },
-        {
-          "hash": "01d87e8",
-          "subject": "fix: carry the user's name in the token so /auth/me returns it (admin greeting said 'Admin' instead of the owner's name)",
-          "date": "2026-10-09T00:10:09+05:30"
         }
       ]
     },
