@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-09T02:04:58+00:00",
+  "generated_at": "2026-10-09T02:09:58+00:00",
   "projects": [
     {
       "slug": "leakguard",
@@ -95,6 +95,11 @@
       "live_url": "https://nexus-local.onrender.com",
       "commits": [
         {
+          "hash": "2599b33",
+          "subject": "revert: remove Horizon page + vendored libs (owner's call)",
+          "date": "2026-10-09T07:35:52+05:30"
+        },
+        {
           "hash": "5132681",
           "subject": "Fix Horizon on Nexus: vendor three.core.js (three.module.js re-exports it)",
           "date": "2026-10-09T02:03:52+05:30"
@@ -118,11 +123,6 @@
           "hash": "8a302ca",
           "subject": "Production hardening P5: accessibility pass (labels, contrast, type)",
           "date": "2026-10-08T23:46:38+05:30"
-        },
-        {
-          "hash": "f4b3df2",
-          "subject": "Production hardening P1+P2: 39 new tests, redacted error logging, JSON-500 wrapper, usage rotation, /health",
-          "date": "2026-10-08T23:42:51+05:30"
         }
       ]
     },
