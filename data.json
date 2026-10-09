@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-09T19:02:03+00:00",
+  "generated_at": "2026-10-09T20:17:05+00:00",
   "projects": [
     {
       "slug": "leakguard",
@@ -95,6 +95,11 @@
       "live_url": "https://nexus-local.onrender.com",
       "commits": [
         {
+          "hash": "19a3227",
+          "subject": "3D admin console + full backend (owner design, every control built for real)",
+          "date": "2026-10-10T01:42:09+05:30"
+        },
+        {
           "hash": "5bdcd9f",
           "subject": "Favicon: the Nexus bat (owner order)",
           "date": "2026-10-09T19:01:32+00:00"
@@ -118,11 +123,6 @@
           "hash": "bc07f5f",
           "subject": "Fix friend-list restore + open Setup page to normal users (owner orders)",
           "date": "2026-10-09T22:05:06+05:30"
-        },
-        {
-          "hash": "bb03e40",
-          "subject": "Docs: README \u2014 API Access page + external /v1 API section",
-          "date": "2026-10-09T21:00:32+05:30"
         }
       ]
     },
