@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-09T16:35:14+00:00",
+  "generated_at": "2026-10-09T17:11:57+00:00",
   "projects": [
     {
       "slug": "leakguard",
@@ -95,6 +95,11 @@
       "live_url": "https://nexus-local.onrender.com",
       "commits": [
         {
+          "hash": "78faee6",
+          "subject": "v1 supply: add FreeLLMAPI provider lanes + admin key generation (owner orders)",
+          "date": "2026-10-09T22:39:59+05:30"
+        },
+        {
           "hash": "bc07f5f",
           "subject": "Fix friend-list restore + open Setup page to normal users (owner orders)",
           "date": "2026-10-09T22:05:06+05:30"
@@ -118,11 +123,6 @@
           "hash": "177996c",
           "subject": "Login page: full restyle to the picked modern-login design",
           "date": "2026-10-09T09:17:50+05:30"
-        },
-        {
-          "hash": "17055fb",
-          "subject": "Login: dim dot-grid behind tagline + setup link (owner request)",
-          "date": "2026-10-09T09:11:50+05:30"
         }
       ]
     },
