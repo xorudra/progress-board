@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-09T17:21:57+00:00",
+  "generated_at": "2026-10-09T17:46:59+00:00",
   "projects": [
     {
       "slug": "leakguard",
@@ -56,6 +56,11 @@
       "live_url": null,
       "commits": [
         {
+          "hash": "36e616a",
+          "subject": "feat(platform): one front door \u2014 opening the web console wakes the AI + worker services (fire-and-forget pings from the Shell; CSP connect-src extended to the peer origins, env-derived like the API origin), and the Admin Panel system status now lists the WHOLE deployment: HealthService.serviceChecks() HTTP-probes the AI copilot, worker and web console (an HTTP answer proves the service is awake; a timeout honestly reads 'no response \u2014 may be waking up'), merged into /platform/dashboard over the infra checks; WORKER_SERVICE_URL/WEB_APP_URL config + render.yaml wiring (reference-deployment defaults, overridable)",
+          "date": "2026-10-09T23:15:33+05:30"
+        },
+        {
           "hash": "aaa50e6",
           "subject": "feat(profile): new /profile page in the 'Free User Profile' persona-dashboard design (Brand Kit) \u2014 deep-green identity panel with monogram, peach-to-violet segmented donut of REAL findings-by-severity from /findings/summary, dark stat cards (findings, critical+high, days as member), profile details + security & access card; /auth/me additively enriched with org/workspace names, member since, last login, email-verified (token fields unchanged, degrades to token identity on lookup failure); sidebar profile block now links to /profile",
           "date": "2026-10-09T17:21:48+00:00"
@@ -79,11 +84,6 @@
           "hash": "036696b",
           "subject": "fix(health): probe hosted S3 (HTTPS) object storage on 443, not the MinIO default 9000",
           "date": "2026-10-09T19:58:37+05:30"
-        },
-        {
-          "hash": "b010113",
-          "subject": "Move demo database from expiring Render Postgres to Neon (free)",
-          "date": "2026-10-09T19:30:25+05:30"
         }
       ]
     },
