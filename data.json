@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-09T15:30:09+00:00",
+  "generated_at": "2026-10-09T15:35:08+00:00",
   "projects": [
     {
       "slug": "leakguard",
@@ -95,6 +95,11 @@
       "live_url": "https://nexus-local.onrender.com",
       "commits": [
         {
+          "hash": "bb03e40",
+          "subject": "Docs: README \u2014 API Access page + external /v1 API section",
+          "date": "2026-10-09T21:00:32+05:30"
+        },
+        {
           "hash": "fdb5e54",
           "subject": "feat: external /v1 API + admin API Access page (owner order)",
           "date": "2026-10-09T20:44:28+05:30"
@@ -118,11 +123,6 @@
           "hash": "f136dba",
           "subject": "fix(login): dot-grid shader link failure \u2014 precision mismatch",
           "date": "2026-10-09T08:30:19+05:30"
-        },
-        {
-          "hash": "0f65a5d",
-          "subject": "Login page: modern-login dot-grid design (owner request)",
-          "date": "2026-10-09T07:58:47+05:30"
         }
       ]
     },
