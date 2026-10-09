@@ -149,7 +149,7 @@
     <!--DATA_START-->
 <script id="board-data" type="application/json">
 {
-  "generated_at": "2026-10-09T23:46:44+05:30",
+  "generated_at": "2026-10-09T18:17:02+00:00",
   "projects": [
     {
       "slug": "leakguard",
@@ -206,6 +206,11 @@
       "live_url": null,
       "commits": [
         {
+          "hash": "a104c7e",
+          "subject": "Docs: README \u2014 console bullet (Admin Panel with all-services live status, profile page, one-front-door wake-up) + verified-live line now covers the full seven-service status",
+          "date": "2026-10-09T23:46:49+05:30"
+        },
+        {
           "hash": "36e616a",
           "subject": "feat(platform): one front door \u2014 opening the web console wakes the AI + worker services (fire-and-forget pings from the Shell; CSP connect-src extended to the peer origins, env-derived like the API origin), and the Admin Panel system status now lists the WHOLE deployment: HealthService.serviceChecks() HTTP-probes the AI copilot, worker and web console (an HTTP answer proves the service is awake; a timeout honestly reads 'no response \u2014 may be waking up'), merged into /platform/dashboard over the infra checks; WORKER_SERVICE_URL/WEB_APP_URL config + render.yaml wiring (reference-deployment defaults, overridable)",
           "date": "2026-10-09T23:15:33+05:30"
@@ -229,11 +234,6 @@
           "hash": "a4c6855",
           "subject": "Docs: object storage is live (Supabase S3 bucket) \u2014 health is fully green",
           "date": "2026-10-09T20:19:09+05:30"
-        },
-        {
-          "hash": "036696b",
-          "subject": "fix(health): probe hosted S3 (HTTPS) object storage on 443, not the MinIO default 9000",
-          "date": "2026-10-09T19:58:37+05:30"
         }
       ]
     },
