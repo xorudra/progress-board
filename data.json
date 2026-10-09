@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-09T02:50:00+00:00",
+  "generated_at": "2026-10-09T03:05:00+00:00",
   "projects": [
     {
       "slug": "leakguard",
@@ -95,6 +95,11 @@
       "live_url": "https://nexus-local.onrender.com",
       "commits": [
         {
+          "hash": "f136dba",
+          "subject": "fix(login): dot-grid shader link failure \u2014 precision mismatch",
+          "date": "2026-10-09T08:30:19+05:30"
+        },
+        {
           "hash": "0f65a5d",
           "subject": "Login page: modern-login dot-grid design (owner request)",
           "date": "2026-10-09T07:58:47+05:30"
@@ -118,11 +123,6 @@
           "hash": "6c153b1",
           "subject": "Temporary view passes: admin-minted read-only links (owner-approved)",
           "date": "2026-10-09T01:25:26+05:30"
-        },
-        {
-          "hash": "edb38ea",
-          "subject": "Admin page: Dashdark-style restyle (owner-approved, visuals only)",
-          "date": "2026-10-09T00:53:15+05:30"
         }
       ]
     },
