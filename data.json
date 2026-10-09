@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-09T02:09:58+00:00",
+  "generated_at": "2026-10-09T02:19:59+00:00",
   "projects": [
     {
       "slug": "leakguard",
@@ -56,6 +56,11 @@
       "live_url": null,
       "commits": [
         {
+          "hash": "80ef462",
+          "subject": "feat(web): modern-login-signup UI becomes the real /login + signup",
+          "date": "2026-10-09T07:45:18+05:30"
+        },
+        {
           "hash": "2a5ac27",
           "subject": "revert: remove Horizon hero integration (owner's call)",
           "date": "2026-10-09T07:34:10+05:30"
@@ -79,11 +84,6 @@
           "hash": "b328627",
           "subject": "fix(web): CSP connect-src must allow the API origin \u2014 'self'-only blocked every browser API call (login failed while API/CORS/credentials were all correct)",
           "date": "2026-10-08T23:36:00+05:30"
-        },
-        {
-          "hash": "9a578d8",
-          "subject": "docs: README rewritten \u2014 clean structure, status-at-a-glance, compact 40-phase map, honest limitations",
-          "date": "2026-10-08T23:10:28+05:30"
         }
       ]
     },
