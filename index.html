@@ -149,7 +149,7 @@
     <!--DATA_START-->
 <script id="board-data" type="application/json">
 {
-  "generated_at": "2026-10-10T16:03:14+00:00",
+  "generated_at": "2026-10-10T16:13:15+00:00",
   "projects": [
     {
       "slug": "leakguard",
@@ -245,6 +245,11 @@
       "live_url": "https://nexus-local.onrender.com",
       "commits": [
         {
+          "hash": "d19881a",
+          "subject": "fix(console): numeric settings pills refused for sending DOM strings \u2014 seg control sent session_minutes as \"60\" (dataset is always text) and the validator only accepted numbers, so tapping 1h/8h/24h, retention, cooldown, password length, chat rate, latency and quota pills all errored. Frontend now coerces integer values to numbers; server coerces integer strings for numeric settings as defense in depth (allowed values still enforced). Regression test test_01b; suite 127/127",
+          "date": "2026-10-10T21:41:04+05:30"
+        },
+        {
           "hash": "39cb7f0",
           "subject": "Admin console: self-host the 3D library + readable dropdowns in dark theme",
           "date": "2026-10-10T21:30:42+05:30"
@@ -268,11 +273,6 @@
           "hash": "3b9fea3",
           "subject": "Close the console review gaps: durable telemetry, status strip, settings restore",
           "date": "2026-10-10T11:14:48+05:30"
-        },
-        {
-          "hash": "5e4538e",
-          "subject": "Fix console kicking the owner out right after load",
-          "date": "2026-10-10T09:34:41+05:30"
         }
       ]
     },
