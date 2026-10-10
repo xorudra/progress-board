@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-10T06:26:30+00:00",
+  "generated_at": "2026-10-10T06:36:31+00:00",
   "projects": [
     {
       "slug": "leakguard",
@@ -56,6 +56,11 @@
       "live_url": null,
       "commits": [
         {
+          "hash": "4220424",
+          "subject": "feat(legal): replace the \u00a7166 draft-placeholder legal pages with the operator's real documents for this deployment \u2014 Terms (authorized-use-only as a condition, AI-features honesty, liability), Privacy (what is collected and why, AI processing with redaction disclosed, no sale/no trackers/no session replay), Acceptable Use, Security (real controls, vulnerability reporting, no certification claims), Subprocessors (Render/Neon/Supabase/UptimeRobot/AI route as actually used) \u2014 and surface them where users decide: legal links in the sign-in card footer and a Terms/Privacy consent line on the sign-up form. Dependency license scan: no copyleft (GPL/AGPL/LGPL) in production deps; data endpoints re-verified 401 for anonymous callers",
+          "date": "2026-10-10T12:03:04+05:30"
+        },
+        {
           "hash": "aae59d0",
           "subject": "fix(security): close the five 'vibe-coded app' risks for DSRclone \u2014 (1) /metrics was publicly readable on the hosted deployment (request counts, memory, uptime): now Bearer-token gated via METRICS_TOKEN and 404-invisible when unset; (2) the AI service's /copilot/generate spent live provider quota with NO auth and NO cap: now requires the AI_SERVICE_KEY shared secret (401), a hard per-IP rate cap of 30/min keyed on the last XFF hop (429), and pydantic field caps so context size cannot mean unbounded spend; (3) registration had no attempt bucket despite bcrypt+3 table writes per call: per-IP cap 10/hour via the existing \u00a722 bucket machinery; (4) accessibility: sidebar group toggles expose aria-expanded and the mobile drawer closes on Escape (labels/dialog semantics were already in place); storage bucket + DB verified NOT publicly accessible (unauthenticated probes 404) and the remaining @Public endpoints are signature/API-key/correlation-token authenticated by design",
           "date": "2026-10-10T11:09:23+05:30"
@@ -79,11 +84,6 @@
           "hash": "aaa50e6",
           "subject": "feat(profile): new /profile page in the 'Free User Profile' persona-dashboard design (Brand Kit) \u2014 deep-green identity panel with monogram, peach-to-violet segmented donut of REAL findings-by-severity from /findings/summary, dark stat cards (findings, critical+high, days as member), profile details + security & access card; /auth/me additively enriched with org/workspace names, member since, last login, email-verified (token fields unchanged, degrades to token identity on lookup failure); sidebar profile block now links to /profile",
           "date": "2026-10-09T17:21:48+00:00"
-        },
-        {
-          "hash": "754db8c",
-          "subject": "Docs: AI copilot is connected live via Nexus Local's /v1 API",
-          "date": "2026-10-09T20:55:28+05:30"
         }
       ]
     },
@@ -94,6 +94,11 @@
       "progress": null,
       "live_url": "https://nexus-local.onrender.com",
       "commits": [
+        {
+          "hash": "77c8aaf",
+          "subject": "Legal pages: plain-language Terms + Privacy, linked from sign-in",
+          "date": "2026-10-10T12:03:03+05:30"
+        },
         {
           "hash": "2ecda00",
           "subject": "Reel-risk audit: hard daily cap for /v1, attachment preview alt text",
@@ -118,11 +123,6 @@
           "hash": "db2888c",
           "subject": "Console: Dashboard home button on the mobile top bar too",
           "date": "2026-10-10T08:55:17+05:30"
-        },
-        {
-          "hash": "0eb4aa4",
-          "subject": "Console: add Dashboard button back to the main app",
-          "date": "2026-10-10T08:50:27+05:30"
         }
       ]
     },
