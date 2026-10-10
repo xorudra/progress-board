@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-09T20:17:05+00:00",
+  "generated_at": "2026-10-10T03:18:04+00:00",
   "projects": [
     {
       "slug": "leakguard",
@@ -95,6 +95,11 @@
       "live_url": "https://nexus-local.onrender.com",
       "commits": [
         {
+          "hash": "02fede7",
+          "subject": "Admin console v2: roles, invites, announcements, rail + drawer shell",
+          "date": "2026-10-10T08:44:05+05:30"
+        },
+        {
           "hash": "19a3227",
           "subject": "3D admin console + full backend (owner design, every control built for real)",
           "date": "2026-10-10T01:42:09+05:30"
@@ -118,11 +123,6 @@
           "hash": "78faee6",
           "subject": "v1 supply: add FreeLLMAPI provider lanes + admin key generation (owner orders)",
           "date": "2026-10-09T22:39:59+05:30"
-        },
-        {
-          "hash": "bc07f5f",
-          "subject": "Fix friend-list restore + open Setup page to normal users (owner orders)",
-          "date": "2026-10-09T22:05:06+05:30"
         }
       ]
     },
