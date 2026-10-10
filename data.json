@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-10T11:50:06+00:00",
+  "generated_at": "2026-10-10T12:00:07+00:00",
   "projects": [
     {
       "slug": "leakguard",
@@ -56,6 +56,11 @@
       "live_url": null,
       "commits": [
         {
+          "hash": "e6dc0b8",
+          "subject": "feat(invite-only): close public sign-up \u2014 REGISTRATION_MODE=invite-only refuses POST /auth/register with a clear message (config schema + live-read helper, render.yaml sets it for this deployment); sign-up view replaced with an invite-only notice ('not open for public sign-up', invitation CTA); new public /invite page accepts an organization invitation token (the product's existing \u00a763 flow: hashed, single-use, 7-day) and creates the account; members page now tells admins to send invitees to /invite with the token; 2 new auth tests, API suite 713/713",
+          "date": "2026-10-10T17:27:26+05:30"
+        },
+        {
           "hash": "b0ae139",
           "subject": "fix(web): legal pages publicly visitable \u2014 auth guard no longer bounces signed-out readers from /legal/*, public pages render without console chrome (slim header + document nav + sign-in link), /privacy and /terms aliases redirect to the canonical documents, privacy page token-storage wording corrected (memory-only token + HttpOnly cookie since A7, not local storage)",
           "date": "2026-10-10T17:15:02+05:30"
@@ -79,11 +84,6 @@
           "hash": "4220424",
           "subject": "feat(legal): replace the \u00a7166 draft-placeholder legal pages with the operator's real documents for this deployment \u2014 Terms (authorized-use-only as a condition, AI-features honesty, liability), Privacy (what is collected and why, AI processing with redaction disclosed, no sale/no trackers/no session replay), Acceptable Use, Security (real controls, vulnerability reporting, no certification claims), Subprocessors (Render/Neon/Supabase/UptimeRobot/AI route as actually used) \u2014 and surface them where users decide: legal links in the sign-in card footer and a Terms/Privacy consent line on the sign-up form. Dependency license scan: no copyleft (GPL/AGPL/LGPL) in production deps; data endpoints re-verified 401 for anonymous callers",
           "date": "2026-10-10T12:03:04+05:30"
-        },
-        {
-          "hash": "aae59d0",
-          "subject": "fix(security): close the five 'vibe-coded app' risks for DSRclone \u2014 (1) /metrics was publicly readable on the hosted deployment (request counts, memory, uptime): now Bearer-token gated via METRICS_TOKEN and 404-invisible when unset; (2) the AI service's /copilot/generate spent live provider quota with NO auth and NO cap: now requires the AI_SERVICE_KEY shared secret (401), a hard per-IP rate cap of 30/min keyed on the last XFF hop (429), and pydantic field caps so context size cannot mean unbounded spend; (3) registration had no attempt bucket despite bcrypt+3 table writes per call: per-IP cap 10/hour via the existing \u00a722 bucket machinery; (4) accessibility: sidebar group toggles expose aria-expanded and the mobile drawer closes on Escape (labels/dialog semantics were already in place); storage bucket + DB verified NOT publicly accessible (unauthenticated probes 404) and the remaining @Public endpoints are signature/API-key/correlation-token authenticated by design",
-          "date": "2026-10-10T11:09:23+05:30"
         }
       ]
     },
