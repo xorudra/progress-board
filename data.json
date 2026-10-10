@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-10T13:20:10+00:00",
+  "generated_at": "2026-10-10T16:03:14+00:00",
   "projects": [
     {
       "slug": "leakguard",
@@ -95,6 +95,11 @@
       "live_url": "https://nexus-local.onrender.com",
       "commits": [
         {
+          "hash": "39cb7f0",
+          "subject": "Admin console: self-host the 3D library + readable dropdowns in dark theme",
+          "date": "2026-10-10T21:30:42+05:30"
+        },
+        {
           "hash": "44eeb40",
           "subject": "Wave-1 Launch Safety fixes: SSRF guard for custom provider URLs, chat markdown XSS, last-hop rate-limit keying, chat export, revoke history purge, terms notice",
           "date": "2026-10-10T07:12:19+00:00"
@@ -118,11 +123,6 @@
           "hash": "5e4538e",
           "subject": "Fix console kicking the owner out right after load",
           "date": "2026-10-10T09:34:41+05:30"
-        },
-        {
-          "hash": "0db7874",
-          "subject": "Fix console sign-out not ending other sessions",
-          "date": "2026-10-10T09:07:58+05:30"
         }
       ]
     },
