@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-10T07:31:46+00:00",
+  "generated_at": "2026-10-10T08:21:49+00:00",
   "projects": [
     {
       "slug": "leakguard",
@@ -56,6 +56,16 @@
       "live_url": null,
       "commits": [
         {
+          "hash": "e038dd6",
+          "subject": "fix(launch-safety): wave 2 A7 \u2014 session-linked JWTs, rotating refresh cookie, in-memory web tokens",
+          "date": "2026-10-10T08:21:25+00:00"
+        },
+        {
+          "hash": "e891405",
+          "subject": "fix(launch-safety): wave 2 B20 \u2014 split migration vs app database URLs",
+          "date": "2026-10-10T08:21:21+00:00"
+        },
+        {
           "hash": "8c191ec",
           "subject": "fix(launch-safety): wave 1 \u2014 proxy-keyed rate limits, guarded verification fetch, consent record, self-service account rights, focus visibility",
           "date": "2026-10-10T07:12:27+00:00"
@@ -74,16 +84,6 @@
           "hash": "6ac764b",
           "subject": "fix(admin): admin plane must not vanish until re-login \u2014 (1) platform RBAC now honors the isPlatformAdmin deployment flag (\u00a796): the role map alone closed the plane whenever the current org context carried a lesser role, while the console still offered it; (2) /admin retries a failed dashboard load with backoff + a Retry button (one cold-start failure used to stick until remount); (3) Shell retries /auth/me so the Admin Panel link survives an API wake-up; (4) apiFetch treats a 401 with an existing token as an expired session: clears it and returns to /login instead of leaving every gated page silently broken",
           "date": "2026-10-09T18:38:59+00:00"
-        },
-        {
-          "hash": "a104c7e",
-          "subject": "Docs: README \u2014 console bullet (Admin Panel with all-services live status, profile page, one-front-door wake-up) + verified-live line now covers the full seven-service status",
-          "date": "2026-10-09T23:46:49+05:30"
-        },
-        {
-          "hash": "36e616a",
-          "subject": "feat(platform): one front door \u2014 opening the web console wakes the AI + worker services (fire-and-forget pings from the Shell; CSP connect-src extended to the peer origins, env-derived like the API origin), and the Admin Panel system status now lists the WHOLE deployment: HealthService.serviceChecks() HTTP-probes the AI copilot, worker and web console (an HTTP answer proves the service is awake; a timeout honestly reads 'no response \u2014 may be waking up'), merged into /platform/dashboard over the infra checks; WORKER_SERVICE_URL/WEB_APP_URL config + render.yaml wiring (reference-deployment defaults, overridable)",
-          "date": "2026-10-09T23:15:33+05:30"
         }
       ]
     },
