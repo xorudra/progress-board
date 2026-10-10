@@ -149,7 +149,7 @@
     <!--DATA_START-->
 <script id="board-data" type="application/json">
 {
-  "generated_at": "2026-10-10T16:23:15+00:00",
+  "generated_at": "2026-10-10T16:38:16+00:00",
   "projects": [
     {
       "slug": "leakguard",
@@ -245,6 +245,11 @@
       "live_url": "https://nexus-local.onrender.com",
       "commits": [
         {
+          "hash": "2b1047c",
+          "subject": "Admin console goes live: everything auto-refreshes every 15s",
+          "date": "2026-10-10T22:03:56+05:30"
+        },
+        {
           "hash": "d19881a",
           "subject": "fix(console): numeric settings pills refused for sending DOM strings \u2014 seg control sent session_minutes as \"60\" (dataset is always text) and the validator only accepted numbers, so tapping 1h/8h/24h, retention, cooldown, password length, chat rate, latency and quota pills all errored. Frontend now coerces integer values to numbers; server coerces integer strings for numeric settings as defense in depth (allowed values still enforced). Regression test test_01b; suite 127/127",
           "date": "2026-10-10T21:41:04+05:30"
@@ -268,11 +273,6 @@
           "hash": "2ecda00",
           "subject": "Reel-risk audit: hard daily cap for /v1, attachment preview alt text",
           "date": "2026-10-10T11:41:28+05:30"
-        },
-        {
-          "hash": "3b9fea3",
-          "subject": "Close the console review gaps: durable telemetry, status strip, settings restore",
-          "date": "2026-10-10T11:14:48+05:30"
         }
       ]
     },
