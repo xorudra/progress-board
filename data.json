@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-10T17:37:56+00:00",
+  "generated_at": "2026-10-10T17:52:59+00:00",
   "projects": [
     {
       "slug": "leakguard",
@@ -95,6 +95,11 @@
       "live_url": "https://nexus-local.onrender.com",
       "commits": [
         {
+          "hash": "42be116",
+          "subject": "Admin console theme applied across all of Nexus",
+          "date": "2026-10-10T23:18:59+05:30"
+        },
+        {
           "hash": "2b1047c",
           "subject": "Admin console goes live: everything auto-refreshes every 15s",
           "date": "2026-10-10T22:03:56+05:30"
@@ -118,11 +123,6 @@
           "hash": "77c8aaf",
           "subject": "Legal pages: plain-language Terms + Privacy, linked from sign-in",
           "date": "2026-10-10T12:03:03+05:30"
-        },
-        {
-          "hash": "2ecda00",
-          "subject": "Reel-risk audit: hard daily cap for /v1, attachment preview alt text",
-          "date": "2026-10-10T11:41:28+05:30"
         }
       ]
     },
