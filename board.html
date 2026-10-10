@@ -149,7 +149,7 @@
     <!--DATA_START-->
 <script id="board-data" type="application/json">
 {
-  "generated_at": "2026-10-10T08:21:49+00:00",
+  "generated_at": "2026-10-10T11:50:06+00:00",
   "projects": [
     {
       "slug": "leakguard",
@@ -206,6 +206,11 @@
       "live_url": null,
       "commits": [
         {
+          "hash": "b0ae139",
+          "subject": "fix(web): legal pages publicly visitable \u2014 auth guard no longer bounces signed-out readers from /legal/*, public pages render without console chrome (slim header + document nav + sign-in link), /privacy and /terms aliases redirect to the canonical documents, privacy page token-storage wording corrected (memory-only token + HttpOnly cookie since A7, not local storage)",
+          "date": "2026-10-10T17:15:02+05:30"
+        },
+        {
           "hash": "e038dd6",
           "subject": "fix(launch-safety): wave 2 A7 \u2014 session-linked JWTs, rotating refresh cookie, in-memory web tokens",
           "date": "2026-10-10T08:21:25+00:00"
@@ -229,11 +234,6 @@
           "hash": "aae59d0",
           "subject": "fix(security): close the five 'vibe-coded app' risks for DSRclone \u2014 (1) /metrics was publicly readable on the hosted deployment (request counts, memory, uptime): now Bearer-token gated via METRICS_TOKEN and 404-invisible when unset; (2) the AI service's /copilot/generate spent live provider quota with NO auth and NO cap: now requires the AI_SERVICE_KEY shared secret (401), a hard per-IP rate cap of 30/min keyed on the last XFF hop (429), and pydantic field caps so context size cannot mean unbounded spend; (3) registration had no attempt bucket despite bcrypt+3 table writes per call: per-IP cap 10/hour via the existing \u00a722 bucket machinery; (4) accessibility: sidebar group toggles expose aria-expanded and the mobile drawer closes on Escape (labels/dialog semantics were already in place); storage bucket + DB verified NOT publicly accessible (unauthenticated probes 404) and the remaining @Public endpoints are signature/API-key/correlation-token authenticated by design",
           "date": "2026-10-10T11:09:23+05:30"
-        },
-        {
-          "hash": "6ac764b",
-          "subject": "fix(admin): admin plane must not vanish until re-login \u2014 (1) platform RBAC now honors the isPlatformAdmin deployment flag (\u00a796): the role map alone closed the plane whenever the current org context carried a lesser role, while the console still offered it; (2) /admin retries a failed dashboard load with backoff + a Retry button (one cold-start failure used to stick until remount); (3) Shell retries /auth/me so the Admin Panel link survives an API wake-up; (4) apiFetch treats a 401 with an existing token as an expired session: clears it and returns to /login instead of leaving every gated page silently broken",
-          "date": "2026-10-09T18:38:59+00:00"
         }
       ]
     },
