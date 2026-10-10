@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-10T07:16:45+00:00",
+  "generated_at": "2026-10-10T07:31:46+00:00",
   "projects": [
     {
       "slug": "leakguard",
@@ -12,6 +12,11 @@
       },
       "live_url": "https://leakguard-hh8e.onrender.com",
       "commits": [
+        {
+          "hash": "a3dd120",
+          "subject": "Launch Safety wave 1: consent at sign-up, complete export, CSRF on anon routes",
+          "date": "2026-10-10T07:31:07+00:00"
+        },
         {
           "hash": "9d27e74",
           "subject": "Privacy paperwork: cookies/browser-storage section + agent-send disclosure",
@@ -36,11 +41,6 @@
           "hash": "5d2e975",
           "subject": "Docs: record the email-coverage pass (0b93b26)",
           "date": "2026-10-08T23:09:02+05:30"
-        },
-        {
-          "hash": "0b93b26",
-          "subject": "Email coverage: published removal/privacy emails for 20 more brokers",
-          "date": "2026-10-08T22:50:27+05:30"
         }
       ]
     },
