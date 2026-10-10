@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-10T03:28:04+00:00",
+  "generated_at": "2026-10-10T03:38:05+00:00",
   "projects": [
     {
       "slug": "leakguard",
@@ -95,6 +95,11 @@
       "live_url": "https://nexus-local.onrender.com",
       "commits": [
         {
+          "hash": "0db7874",
+          "subject": "Fix console sign-out not ending other sessions",
+          "date": "2026-10-10T09:07:58+05:30"
+        },
+        {
           "hash": "db2888c",
           "subject": "Console: Dashboard home button on the mobile top bar too",
           "date": "2026-10-10T08:55:17+05:30"
@@ -118,11 +123,6 @@
           "hash": "5bdcd9f",
           "subject": "Favicon: the Nexus bat (owner order)",
           "date": "2026-10-09T19:01:32+00:00"
-        },
-        {
-          "hash": "8a01057",
-          "subject": "Login 2FA: CodeSlots component (React Bits) ported to vanilla (owner order)",
-          "date": "2026-10-09T18:52:59+00:00"
         }
       ]
     },
