@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-10T05:46:28+00:00",
+  "generated_at": "2026-10-10T06:16:30+00:00",
   "projects": [
     {
       "slug": "leakguard",
@@ -95,6 +95,11 @@
       "live_url": "https://nexus-local.onrender.com",
       "commits": [
         {
+          "hash": "2ecda00",
+          "subject": "Reel-risk audit: hard daily cap for /v1, attachment preview alt text",
+          "date": "2026-10-10T11:41:28+05:30"
+        },
+        {
           "hash": "3b9fea3",
           "subject": "Close the console review gaps: durable telemetry, status strip, settings restore",
           "date": "2026-10-10T11:14:48+05:30"
@@ -118,11 +123,6 @@
           "hash": "0eb4aa4",
           "subject": "Console: add Dashboard button back to the main app",
           "date": "2026-10-10T08:50:27+05:30"
-        },
-        {
-          "hash": "02fede7",
-          "subject": "Admin console v2: roles, invites, announcements, rail + drawer shell",
-          "date": "2026-10-10T08:44:05+05:30"
         }
       ]
     },
