@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-10T03:18:04+00:00",
+  "generated_at": "2026-10-10T03:23:04+00:00",
   "projects": [
     {
       "slug": "leakguard",
@@ -95,6 +95,11 @@
       "live_url": "https://nexus-local.onrender.com",
       "commits": [
         {
+          "hash": "0eb4aa4",
+          "subject": "Console: add Dashboard button back to the main app",
+          "date": "2026-10-10T08:50:27+05:30"
+        },
+        {
           "hash": "02fede7",
           "subject": "Admin console v2: roles, invites, announcements, rail + drawer shell",
           "date": "2026-10-10T08:44:05+05:30"
@@ -118,11 +123,6 @@
           "hash": "d1207cb",
           "subject": "Sidebar: shadcn-style rail in the original Purple Gotham theme (owner order)",
           "date": "2026-10-09T18:39:29+00:00"
-        },
-        {
-          "hash": "78faee6",
-          "subject": "v1 supply: add FreeLLMAPI provider lanes + admin key generation (owner orders)",
-          "date": "2026-10-09T22:39:59+05:30"
         }
       ]
     },
