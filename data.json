@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-10T18:13:00+00:00",
+  "generated_at": "2026-10-10T18:23:03+00:00",
   "projects": [
     {
       "slug": "leakguard",
@@ -95,6 +95,11 @@
       "live_url": "https://nexus-local.onrender.com",
       "commits": [
         {
+          "hash": "bc07eb0",
+          "subject": "Chat images: honour the picked provider, keep images in saved chats",
+          "date": "2026-10-10T23:50:21+05:30"
+        },
+        {
           "hash": "42be116",
           "subject": "Admin console theme applied across all of Nexus",
           "date": "2026-10-10T23:18:59+05:30"
@@ -118,11 +123,6 @@
           "hash": "44eeb40",
           "subject": "Wave-1 Launch Safety fixes: SSRF guard for custom provider URLs, chat markdown XSS, last-hop rate-limit keying, chat export, revoke history purge, terms notice",
           "date": "2026-10-10T07:12:19+00:00"
-        },
-        {
-          "hash": "77c8aaf",
-          "subject": "Legal pages: plain-language Terms + Privacy, linked from sign-in",
-          "date": "2026-10-10T12:03:03+05:30"
         }
       ]
     },
