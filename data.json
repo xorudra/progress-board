@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-10T07:11:48+00:00",
+  "generated_at": "2026-10-10T07:16:45+00:00",
   "projects": [
     {
       "slug": "leakguard",
@@ -56,6 +56,11 @@
       "live_url": null,
       "commits": [
         {
+          "hash": "8c191ec",
+          "subject": "fix(launch-safety): wave 1 \u2014 proxy-keyed rate limits, guarded verification fetch, consent record, self-service account rights, focus visibility",
+          "date": "2026-10-10T07:12:27+00:00"
+        },
+        {
           "hash": "4220424",
           "subject": "feat(legal): replace the \u00a7166 draft-placeholder legal pages with the operator's real documents for this deployment \u2014 Terms (authorized-use-only as a condition, AI-features honesty, liability), Privacy (what is collected and why, AI processing with redaction disclosed, no sale/no trackers/no session replay), Acceptable Use, Security (real controls, vulnerability reporting, no certification claims), Subprocessors (Render/Neon/Supabase/UptimeRobot/AI route as actually used) \u2014 and surface them where users decide: legal links in the sign-in card footer and a Terms/Privacy consent line on the sign-up form. Dependency license scan: no copyleft (GPL/AGPL/LGPL) in production deps; data endpoints re-verified 401 for anonymous callers",
           "date": "2026-10-10T12:03:04+05:30"
@@ -79,11 +84,6 @@
           "hash": "36e616a",
           "subject": "feat(platform): one front door \u2014 opening the web console wakes the AI + worker services (fire-and-forget pings from the Shell; CSP connect-src extended to the peer origins, env-derived like the API origin), and the Admin Panel system status now lists the WHOLE deployment: HealthService.serviceChecks() HTTP-probes the AI copilot, worker and web console (an HTTP answer proves the service is awake; a timeout honestly reads 'no response \u2014 may be waking up'), merged into /platform/dashboard over the infra checks; WORKER_SERVICE_URL/WEB_APP_URL config + render.yaml wiring (reference-deployment defaults, overridable)",
           "date": "2026-10-09T23:15:33+05:30"
-        },
-        {
-          "hash": "aaa50e6",
-          "subject": "feat(profile): new /profile page in the 'Free User Profile' persona-dashboard design (Brand Kit) \u2014 deep-green identity panel with monogram, peach-to-violet segmented donut of REAL findings-by-severity from /findings/summary, dark stat cards (findings, critical+high, days as member), profile details + security & access card; /auth/me additively enriched with org/workspace names, member since, last login, email-verified (token fields unchanged, degrades to token identity on lookup failure); sidebar profile block now links to /profile",
-          "date": "2026-10-09T17:21:48+00:00"
         }
       ]
     },
@@ -94,6 +94,11 @@
       "progress": null,
       "live_url": "https://nexus-local.onrender.com",
       "commits": [
+        {
+          "hash": "44eeb40",
+          "subject": "Wave-1 Launch Safety fixes: SSRF guard for custom provider URLs, chat markdown XSS, last-hop rate-limit keying, chat export, revoke history purge, terms notice",
+          "date": "2026-10-10T07:12:19+00:00"
+        },
         {
           "hash": "77c8aaf",
           "subject": "Legal pages: plain-language Terms + Privacy, linked from sign-in",
@@ -118,11 +123,6 @@
           "hash": "0db7874",
           "subject": "Fix console sign-out not ending other sessions",
           "date": "2026-10-10T09:07:58+05:30"
-        },
-        {
-          "hash": "db2888c",
-          "subject": "Console: Dashboard home button on the mobile top bar too",
-          "date": "2026-10-10T08:55:17+05:30"
         }
       ]
     },
